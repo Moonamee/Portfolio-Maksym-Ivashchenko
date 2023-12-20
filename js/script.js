@@ -1,27 +1,61 @@
-window.onload = function() {
+// window.onload = function() {
+//   var isFirstVisit = sessionStorage.getItem("isFirstVisit");
+//   var welcomePage = document.getElementById("welcome-page");
+
+//   if (!isFirstVisit) {
+//     welcomePage.style.display = "block";
+//   } else {
+//     welcomePage.style.display = "none";
+//   }
+
+//   document.getElementById("welcome-link").addEventListener("click", function(event) {
+//     event.preventDefault();
+//     welcomePage.style.display = "block";
+//   });
+
+//   // Add event listeners to language links
+//   var languageLinks = document.querySelectorAll(".language-container a");
+//   languageLinks.forEach(function(link) {
+//     link.addEventListener("click", function(event) {
+//       // Save the language preference in sessionStorage
+//       sessionStorage.setItem("isFirstVisit", true);
+//     });
+//   });
+// };
+document.addEventListener("DOMContentLoaded", function() {
   var isFirstVisit = sessionStorage.getItem("isFirstVisit");
   var welcomePage = document.getElementById("welcome-page");
+  var loadingScreen = document.getElementById("loading-screen");
 
-  if (!isFirstVisit) {
-    welcomePage.style.display = "block";
-  } else {
-    welcomePage.style.display = "none";
+  function hideLoadingScreen() {
+    loadingScreen.style.transition = "opacity 1s";
+    loadingScreen.style.opacity = 0;
+
+    setTimeout(function() {
+      loadingScreen.style.display = "none";
+      welcomePage.style.display = "block";
+    }, 1000);
   }
 
-  document.getElementById("welcome-link").addEventListener("click", function(event) {
-    event.preventDefault();
-    welcomePage.style.display = "block";
-  });
+  if (!isFirstVisit) {
+    loadingScreen.style.display = "flex";
+    welcomePage.style.display = "none";
 
-  // Add event listeners to language links
+    setTimeout(hideLoadingScreen, 2500);
+  } else {
+    hideLoadingScreen();
+  }
+
   var languageLinks = document.querySelectorAll(".language-container a");
   languageLinks.forEach(function(link) {
     link.addEventListener("click", function(event) {
-      // Save the language preference in sessionStorage
       sessionStorage.setItem("isFirstVisit", true);
     });
   });
-};
+});
+
+
+
 
 // Swiper
 const swiper = new Swiper(".mySwiper", {
