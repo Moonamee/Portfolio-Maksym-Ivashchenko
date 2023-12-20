@@ -25,6 +25,200 @@
   --dark-theme-6: #121212;
 }
 
+/* WELCOME SCREEN */
+.welcome-page {
+  background-image: url('../img/welcome_bg.jpg');
+  background-size: cover;
+  -webkit-animation: welcomeslidein2 400s;
+  animation: welcomeslidein2 400s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+
+@-webkit-keyframes welcomeslidein {
+  from {
+    background-position: left;
+    background-size: 3000px;
+  }
+
+  to {
+    background-position: -100px 0px;
+    background-size: 2000px;
+  }
+}
+
+@keyframes welcomeslidein {
+  from {
+    background-position: left;
+    background-size: 3000px;
+  }
+
+  to {
+    background-position: -100px 0px;
+    background-size: 2000px;
+  }
+}
+
+@-webkit-keyframes welcomeslidein2 {
+  from {
+    background-position: right;
+    background-size: 3000px;
+  }
+
+  to {
+    background-position: -100px 0px;
+    background-size: 2000px;
+  }
+}
+
+@keyframes welcomeslidein2 {
+  from {
+    background-position: right;
+    background-size: 3000px;
+  }
+
+  to {
+    background-position: -100px 0px;
+    background-size: 2000px;
+  }
+}
+
+#welcome-page {
+  display: none;
+  width: 100%;
+  height: 100vh;
+}
+
+.welcome-page {
+  font-family: 'Rubik';
+  color: var(--dark-theme-1);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 99999;
+}
+
+.welcome-container {
+  background-image: url('../img/welcome_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* -webkit-animation: welcomeslidein 250s;
+  animation: welcomeslidein 250s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.welcome-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bg-moon {
+  position: absolute;
+  background-image: url('../img/welcome_bg_moon.png');
+  background-repeat: no-repeat;
+  background-size: 200px;
+  top: 5%;
+  left: 15%;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.bg-fog {
+  position: absolute;
+  background-image: url('../img/welcome_bg_fog.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  -webkit-animation: welcomeslidein 150s;
+  animation: welcomeslidein 150s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.welcome-content h2 {
+  font-size: 48px;
+}
+
+.change-language {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.change-language span {
+  font-size: 24px;
+}
+
+.language-container {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.language-container a {
+  padding: 15px 40px 15px 40px;
+  border: 1px solid #c5c5c5d2;
+  color: var(--dark-theme-2);
+  transition: all 0.5s;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+}
+
+.language-container a:hover {
+  padding: 15px 40px 15px 40px;
+  border: 1px solid var(--dark-theme-2);
+  color: var(--dark-theme-2);
+  color: var(--dark-theme-6);
+  transition: all 0.5s;
+  background-color: var(--color-1);
+
+}
+
+.lang-post {
+  display: flex;
+}
+
+.ukraine {
+  display: flex;
+  align-items: center;
+}
+
+.ua_blue {
+  padding-left: 6px;
+  color: #208feb;
+}
+
+.ua_yellow {
+  padding-left: 6px;
+  color: goldenrod;
+}
+
 body {
   font-family: 'Rubik';
   font-style: normal;
@@ -69,7 +263,7 @@ body {
 .bxs-contact,
 .bxs-spreadsheet {
   padding-right: 5px;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .header {
@@ -129,7 +323,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--color-6);
   width: 128px;
@@ -1885,13 +2079,14 @@ iframe {
 .massage__form-name {
   color: var(--color-6);
   font-size: 20px;
-  width: 300px;
+  width: 100%;
   height: 20px;
   border-radius: 15px;
   border: 1px solid #978CA2;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
   padding: 25px;
   transition: 0.3s;
+  margin-right: 20px;
 }
 
 .massage__form-name:hover {
@@ -1902,7 +2097,7 @@ iframe {
 .massage__form-email {
   color: var(--color-6);
   font-size: 20px;
-  width: 300px;
+  width: 100%;
   height: 20px;
   border-radius: 15px;
   border: 1px solid #978CA2;
@@ -1925,13 +2120,19 @@ textarea:focus {
   display: flex;
 }
 
+.contact-massage__name_mail {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .massage__form-massage {
   color: var(--color-6);
   font-size: 20px;
   vertical-align: top;
   padding: 25px;
   transition: 0.3s;
-  width: 650px;
+  width: 695px;
   height: 265px;
   border-radius: 15px;
   border: 1px solid #978CA2;
