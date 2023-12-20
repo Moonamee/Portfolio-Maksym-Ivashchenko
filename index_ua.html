@@ -1,1 +1,1678 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link rel="icon" href="./favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+    <!-- SWIPER SLIDE -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <!-- SPLIDE SWIPER -->
+    <link rel="stylesheet" href="./css/splide-core.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dark.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    >
+    <title>Портфоліо | Максим Іващенко</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- HEADER -->
+      <header
+        class="header"
+        id="header"
+      >
+        <div class="header-logo">
+          <img
+            class="header-logo__light"
+            src="./img/header/logo.png"
+            alt="Logo"
+          >
+          <img
+            class="header-logo__dark"
+            src="./img/header/logo_dark.png"
+            alt="Logo"
+          >
+          <span data-first-color="Порт" data-last-color="фоліо"></span>
+        </div>
+        <!-- DESKTOP -->
+        <nav class="header-nav"> 
+          <ul>
+            <li class="header-nav__link active">
+              <a id="homeLink" href="#"><i class='bx bxs-home'></i>Головна</a>
+            </li>
+            <li class="header-nav__link"> 
+              <a id="aboutLink" href="#"><i class='bx bxs-user-rectangle'></i>Про мене</a>
+            </li>
+            <li class="header-nav__link">
+              <a id="projectLink" href="#"><i class='bx bxs-image-alt'></i>Проекти</a>
+            </li>
+            <li class="header-nav__link">
+              <a id="resumeLink" href="#"><i class='bx bxs-spreadsheet'></i>Резюме</a>
+            </li>
+            <li class="header-nav__link">
+              <a id="contactLink" href="#"><i class='bx bxs-contact'></i>Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-right-panel">
+          <div class="header-lang-change">
+            <div class="select-trigger" onclick="toggleOptions()">
+              <span class="selected-option">UA</span>
+            </div>
+            <ul class="options">
+              <li class="option" onclick="handleOptionClick('EN')">
+                <a href="index.html">EN</a>
+              </li>
+              <li class="option" onclick="handleOptionClick('UA')">
+                <a href="index_ua.html">UA</a>
+              </li>
+            </ul>
+          </div>
+          <div class="theme-mode">
+            <img src="./img/header/theme_light__sun.svg" alt="Sun">
+          </div>
+        </div>
+      </header>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- HOME -->
+          <div class="swiper-slide" id="home">
+            <div class="main-home">
+              <div class="hero-wrapper">
+                <section class="hero-section">
+                  <div class="hero-background__primary">
+                    <div class="hero-form">
+                      <div class="hero-background__secondary home-mobile">
+                        <img
+                          class="light-image"
+                          src="./img/main/hero/hero_avatar.png"
+                          alt="Image"
+                        >
+                        <img
+                          class="dark-image"
+                          src="./img/main/hero/hero_avatar_dark.png"
+                          alt="Image"
+                        >
+                      </div>
+                      <p>Вітаю!</p>
+                      <h2>мене звати Максим</h2>
+                      <h3>
+                        <i class="bx bxs-right-arrow-alt"></i>
+                        Frontend розробник
+                      </h3>
+                      <h3>
+                        <i class="bx bxs-right-arrow-alt"></i>
+                        Дизайнер
+                      </h3>
+                    </div>
+                  </div>
+                </section>
+                <div class="hero-background__secondary home-desktop">
+                  <img
+                    class="light-image"
+                    src="./img/main/hero/hero_avatar.png"
+                    alt="Image"
+                  >
+                  <img
+                    class="dark-image"
+                    src="./img/main/hero/hero_avatar_dark.png"
+                    alt="Image"
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ABOUT -->
+          <div class="swiper-slide" id="about">
+            <div class="main-about">
+              <div class="hero-about-wrapper">
+                <section class="hero-about-section">
+                  <div class="hero-about-background__primary">
+                    <div class="hero-about-form">
+                      <p>Привіт, я</p>
+                      <h1>Максим Іващенко</h1>
+                      <h3>
+                        <i class="bx bxs-right-arrow-alt"></i>
+                        Frontend розробник
+                      </h3>
+                      <h3>
+                        <i class="bx bxs-right-arrow-alt"></i>
+                        Дизайнер (Web, UI/UX, 3D, Interior)
+                      </h3>
+                      <span>// web-розробка</span>
+                      <span
+                        >Програміст, який має досвід створення
+                        web та мобільних додатків на HTML / CSS / JavaScript / React Native.</span
+                      >
+                      <span>// чистий web та ui/ux дизайн</span>
+                      <span
+                        >Досвід і почуття смаку в дизайні. Я працюю
+                        професійно в Figma / Adobe Photoshop / Illustrator
+                        / XD / Autodesk 3ds Max.</span
+                      >
+                      <div class="about-form__button">
+                        <button onclick="downloadFileUa()">Завантажити CV</button>
+                        <button id="aboutReadMore">Резюме</button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div class="about-right-panel__wrapper">
+                  <div class="hero-about-background__secondary">
+                    <img
+                      class="light-image"
+                      src="./img/main/about/hero_avatar.png"
+                      alt="Image"
+                    >
+                    <img
+                      class="dark-image"
+                      src="./img/main/about/hero_avatar_bw.png"
+                      alt="Image"
+                    >
+                  </div>
+                  <div class="about-social-container">
+                    <div class="social-content">
+                      <div class="light-image-mode">
+                        <a target="_blank" href="https://github.com/Moonamee"
+                          ><img
+                            src="./img/main/about/light_soc_github.svg"
+                            alt="GitHub"
+                        ></a>
+                        <a
+                          target="_blank"
+                          href="https://www.linkedin.com/in/max-ivashchenko-7b8337290/"
+                          ><img
+                            src="./img/main/about/light_soc_linkedin.svg"
+                            alt="Linkedin"
+                        ></a>
+                        <a
+                          target="_blank"
+                          href="https://www.facebook.com/profile.php?id=100082964130525"
+                          ><img
+                            src="./img/main/about/light_soc_fb.svg"
+                            alt="Facebook"
+                        ></a>
+                        <a
+                          target="_blank"
+                          href="https://www.instagram.com/maxgleroy/?hl=en"
+                          ><img
+                            src="./img/main/about/light_soc_instagram.svg"
+                            alt="Instagram"
+                        ></a>
+                      </div>
+                      <div class="dark-image-mode">
+                        <a target="_blank" href="https://github.com/Moonamee"
+                          ><img
+                            src="./img/main/about/light_soc_github_darkmode.svg"
+                            alt="GitHub"
+                        ></a>
+                        <a
+                          target="_blank"
+                          href="https://www.linkedin.com/in/max-ivashchenko-7b8337290/"
+                          ><img
+                            src="./img/main/about/light_soc_linkedin_darkmode.svg"
+                            alt="Linkedin"
+                        ></a>
+                        <a
+                          target="_blank"
+                          href="https://www.facebook.com/profile.php?id=100082964130525"
+                          ><img
+                            src="./img/main/about/light_soc_fb_darkmode.svg"
+                            alt="Facebook"
+                        ></a>
+                        <a
+                          target="_blank"
+                          href="https://www.instagram.com/maxgleroy/?hl=en"
+                          ><img
+                            src="./img/main/about/light_soc_instagram_darkmode.svg"
+                            alt="Instagram"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PROJECT -->
+          <div class="swiper-slide" id="project">
+            <section class="splide" aria-label="Splide Basic HTML Example">
+              <div class="my-slider-progress">
+                <div class="my-slider-progress-bar"></div>
+              </div>
+              <div class="splide__arrows">
+                <!-- Light mode -->
+                <button
+                  class="splide__arrow splide__arrow--prev"
+                  id="prevButton"
+                >
+                  <i class="bx bxs-chevron-left-circle splide-circle"></i>
+                </button>
+                <button class="splide__arrow splide__arrow--next" id="prevNext">
+                  <i class="bx bxs-chevron-right-circle splide-circle"></i>
+                </button>
+              </div>
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <!-- SLIDE 1 -->
+                  <li class="splide__slide">
+                    <div class="main-project">
+                      <div class="main-project-wrapper">
+                        <div class="main-project-container">
+                          <div class="project-form">
+                            <p>Aperture Studios</p>
+                            <span>Фотограф та Відеооператор</span>
+                            <span
+                              >Це базовий макет сайту фотографа. Зроблена плавна анімація,
+                              підказуючі спливаючі елементи, що фокусують увагу на
+                              на головних деталях. Чорний мінімалістичний дизайн
+                              сайту дає можливість зосередитися на фото
+                              та проникнути в суть.</span
+                            >
+                            <div class="form-option__text_adaptive">
+                              <span>Адаптив:</span>
+                              <span>Настільний / Планшет / Мобільний</span>
+                            </div>
+                            <img class="project-form-cover" src="./img/main/project/aperture.jpg" alt="Aper">
+                            <div class="project-form__button">
+                              <button onclick="window.open('https://github.com/Moonamee/Aperture-Studios', '_blank')">Git</button>
+                              <button onclick="window.open('https://moonamee.github.io/Aperture-Studios/', '_blank')">Наживо</button>
+                              <button id="readMoreButton">Детальніше</button>
+                            </div>
+                          </div>
+                          <div id="popupReadMore" class="popupReadMore">
+                            <i
+                              class="bx bxs-left-arrow-circle closeReadMore"
+                              id="closeReadMore"
+                            ></i>
+                            <div class="popupReadMore-content">
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_aperture.png"
+                                alt="Aperture"
+                              >
+                              <span>
+                                Цей сайт є портфоліо фотографа та
+                                та відеооператора під назвою Aperture Studios.
+                              </span>
+                              <p>
+                                1. Головна сторінка сайту містить
+                                інформацію про фотографа та
+                                відеооператора, а також опис робіт.
+                              </p>
+                              <p>
+                                2. У шапці сайту є меню, яке
+                                 дозволяє переходити до різних розділів, наприклад
+                                 як «Сфери діяльності», «Вибрані зображення», «Спорядження», «Контакт».
+                              </p>
+                              <p>
+                                3. Сайт також пропонує можливість завантажити шаблон.
+                              </p>
+                              <p>
+                                4. У розділі «Що ми робимо» представлені сфери, 
+                                в яких спеціалізуються фотограф і відеооператор, 
+                                наприклад, фотографія продуктів, фотографія архітектури, 
+                                фотографія дроном і фотографія дикої природи.
+                              </p>
+                              <p>
+                                5. На сайті також є розділи з фотодемонстраціями, 
+                                інформацією про обладнання, що використовується, 
+                                інформацією про минулих клієнтів, 
+                                можливістю зв'язатися з фотографом та відеооператором.    
+                              </p>
+                              <p>
+                                6. У фундаменті сайту розміщено логотип, 
+                                навігаційні посилання, форму підписки на розсилку, 
+                                інформацію про автора сайту.
+                              </p>
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_aperture_mobile.png"
+                                alt="Aperture"
+                              >
+                              <span>JavaScript</span>
+                              <p>
+                                Скрипт містить кілька функцій, 
+                                які виконують різні дії при прокручуванні 
+                                сторінки і зміні розмірів вікна браузера. 
+                              </p>
+                              <p>
+                                1. Функція «Header bg parallax» відповідає за створення 
+                                ефекту паралакса для фону заголовка. 
+                                Він вибирає всі елементи з класом "main-container__bg" 
+                                та під час прокручування сторінки змінює їх фонове 
+                                положення в залежності від швидкості, 
+                                зазначеної в атрибуті "data-speed".
+                              </p>
+                              <p>
+                                2. Функція "Header on top" відповідає за зміну положення заголовка 
+                                при прокручуванні сторінки. Якщо прокрутка досягає 
+                                або перевищує 100 пікселів, заголовок переміщується вгору, 
+                                а анімація вимикається. Якщо прокрутка менше 100 пікселів, 
+                                заголовок повертається на стартове положення та анімація вмикається. 
+                                Це відбувається лише тоді, коли ширина екрана перевищує 768 пікселів.
+                              </p>
+                              <p>
+                                3. Функція "AOS OFF MOBILE" відповідає за вимкнення німування на мобільних пристроях. 
+                                Вона виділяє всі елементи з атрибутом "data-aos" і при зміні розміру
+                                вікна браузера прибирає цей атрибут для елементів з шириною екрана 
+                                менше або дорівнює 768 пікселів. Коли ширина екрану 
+                                перевищує 768 пікселів, атрибути "data-aos", "data-aos-offset" 
+                                і "data-aos-easing" відновлюються для елементів. 
+                                Таким чином, цей скрипт використовується для створення 
+                                ефекту паралакса для фону заголовка, зміни положення заголовка 
+                                при прокручуванні і вимкнення анімації на мобільних пристроях.
+                              </p>
+                              <a
+                                target="_blank"
+                                href="https://github.com/Moonamee/Aperture-Studios/blob/main/js/script.js"
+                                >git js...</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main-project-background"></div>
+                        <div class="main-project-media">
+                            <button
+                            class="main-project__view"
+                            id="view-slide1"
+                            >
+                            Відкрити
+                            </button>
+                            <div id="popup-slide1">
+                              <div class="popup-content">
+                                <iframe
+                                  class="window-container"
+                                  src="https://moonamee.github.io/Aperture-Studios/"
+                                 ></iframe>
+                              </div>
+                              <div class="popup-side-panel">
+                                <div class="side-panel__content">
+                                  <i
+                                    class="bx bxs-x-circle close-button"
+                                    id="close-slide1"
+                                  ></i>
+                                  <i class="bx bx-devices"></i>
+                                  <a target="_blank" href="https://github.com/Moonamee/Aperture-Studios" class='bx bxl-github'></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="project-monitor__cover">
+                              <img
+                                src="./img/main/project/cover_aperture_mobile.png"
+                                alt="Aperture"
+                              >
+                            </div>
+                            <div class="project-monitor">
+                              <img
+                                src="./img/main/project/cover_aperture.png"
+                                alt="Monitor"
+                              >
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- SLIDE 2 -->
+                  <li class="splide__slide">
+                    <div class="main-project">
+                      <div class="main-project-wrapper">
+                        <div class="main-project-container">
+                          <div class="project-form">
+                            <p>Bright Light</p>
+                            <span>Співачка / Dj / Музичний продюсер</span>
+                            <span
+                              >Сайт містить різні розділи, новини, 
+                              інформацію про Bright Lights (співачку та продюсера), 
+                              останні треки, галерею та інформацію про майбутні події. 
+                              Кожен розділ має свої унікальні елементи, такі як зображення, 
+                              текстовий опис та посилання. Загалом, 
+                              сайт-портфоліо покликаний продемонструвати творчість та 
+                              досягнення Bright Lights, а також надати інформацію та розвагу 
+                              відвідувачам сайту.</span
+                            >
+                            <div class="form-option__text_adaptive">
+                              <span>Адаптив:</span>
+                              <span>Настільний / Планшет / Мобільний</span>
+                            </div>
+                            <img class="project-form-cover" src="./img/main/project/brightlight.jpg" alt="BL">
+                            <div class="project-form__button">
+                              <button onclick="window.open('https://github.com/Moonamee/Bright-Light-Produser-Personal-Site', '_blank')">Git</button>
+                              <button onclick="window.open('https://moonamee.github.io/Bright-Light-Produser-Personal-Site', '_blank')">Наживо</button>
+                              <button id="readMoreButtonNext">Детальніше</button>
+                            </div>
+                          </div>
+                          <div id="popupReadMoreNext" class="popupReadMore">
+                            <i
+                              class="bx bxs-left-arrow-circle closeReadMore"
+                              id="closeReadMoreNext"
+                            ></i>
+                            <div class="popupReadMore-content">
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_brightlight.png"
+                                alt="BL"
+                              >
+                              <span
+                                >Цей сайт є музичним сайтом виконавця під назвою "Bright Lights".</span
+                              >
+                              <p>
+                                1. Сайт має наступну структуру: Шапка
+                                містить логотип художника, головне меню
+                                з посиланнями на розділи сайту (Головна,
+                                Новини, Про нас, Музика, Галерея, Гастролі), а також
+                                блок з плеєром для прослуховування
+                                музики.</p
+                              >
+                              <p>
+                                2. Основний контент (main) сайту
+                                розділений на кілька блоків: Блок новин
+                                (News), який містить картки з новинами та
+                                можливість прочитати деталі. (About Us)
+                                блок з описом виконавця та його
+                                досягнень. Блок з цитатою та посиланням
+                                на інтерв'ю з артистом. (Latest tracks)
+                                блок, що містить обкладинку треку, плеєр та
+                                плейлист з посиланнями на треки. Блок з галереєю, що містить зображення артиста. Блок з найближчими подіями та турами, що включає картки з інформацією про події та посиланнями на
+                                придбання квитків.
+                              </p>
+                              <p>
+                                3. Сайт має адаптивний дизайн і пропонує
+                                зручну навігацію по розділах.
+                              </p>
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_brightlight_mobile.png"
+                                alt="BL"
+                              >
+                              <span>JavaScript</span>
+                              <p>
+                                Цей сайт містить наступні JavaScript елементи:
+                              </p>
+                              <p>
+                                1. Ініціалізуємо бібліотеку AOS (Animate On Scroll)
+                                викликавши функцію AOS.init(). Ця
+                                бібліотека дозволяє додавати анімацію до елементів
+                                при прокручуванні сторінки.
+                              </p>
+                              <p>
+                                2. Функціональність мобільного
+                                плеєра. Використовуючи JavaScript, відтворення аудіо та
+                                призупинення, відображення часу та прогресу відтворення аудіо
+                                на мобільному плеєрі.
+                              </p>
+                              <p>
+                                3. Реалізація функціоналу прокрутки сторінок 
+                                при натисканні на пункти меню, сторінка плавно 
+                                прокручується до відповідного розділу.
+                              </p>
+                              <p>
+                                4. Реалізація ефекту паралакса на сайті При прокручуванні сторінки фон шапки сайту рухається зі швидкістю, що відрізняється
+                                ніж швидкість прокрутки сторінки, створюючи ефект глибини.
+                              </p>
+                              <p>
+                                5. Реалізація плавної прокрутки до шапки
+                                при завантаженні сторінки. При завантаженні сторінки відбувається плавна прокрутка
+                                сторінка плавно прокручується до заголовка, щоб
+                                щоб користувач міг одразу побачити
+                                вміст сторінки.
+                              </p>
+                              <p>
+                                6. Реалізація функціоналу відкриття
+                                та закриття контейнера з описом новини
+                                при натисканні на кнопку "Детальніше". При натисканні на кнопку "Детальніше"
+                                контейнер з описом новини
+                                відкривається, та при повторному натисканні - закривається.
+                              </p>
+                              <p>
+                                7. Реалізація функціоналу аудіоплеєра. 
+                                Аудіоплеєр з функціями управління відтворенням,
+                                 регулюванням гучностіта відображення прогресу відтворення.
+                              </p>
+                              <p>
+                                8. Реалізація функціональності спливаючих вікон.
+                                При натисканні на текстову іконку відкривається спливаюче вікно
+                                з додатковою інформацією, яке можна закрити
+                                натиснувши за межами вікна.
+                              </p>
+                              <p>
+                                9. Відтворення відео за допомогою YouTube API та
+                                відображення відео в модальному вікні. При натисканні на
+                                відео відкривається модальне вікно, в якому відтворюється
+                                відео за допомогою API YouTube.
+                              </p>
+                              <p>
+                                10. Реалізація галереї зображень з можливістю збільшення 
+                                зображення при натисканні. Коли ви натискаєте на зображення 
+                                в галереї, воно збільшується для більш детального перегляду.
+                              </p>
+                              <p>
+                                11. За допомогою Swiper створюється Slide з можливістю навігації та перемикання зображень. Swiper
+                                дозволяє створювати адаптивні слайди з
+                                різноманітними налаштуваннями та ефектами переходу.
+                              </p>
+                              <p>
+                                12. Додає ефект тіні до перемикача, якщо цей прапорець позначено.
+                                Перемикач додає яскравий ефект тіні до фону слайда.
+                              </p>
+                              <p>
+                                13. Використання Splide для створення слайдера події з
+                                адаптивним відображенням на різних пристроях. Splide
+                                дозволяє створювати слайдери подій, які можна
+                                адаптувати для різних пристроїв та роздільної здатності екрану.
+                              </p>
+                              <p>
+                                14. Різноманітні функції для керування видимістю
+                                та поведінкою елементів сторінки. Ці функції
+                                дозволяють керувати відображенням і поведінкою
+                                елементів на основі дій користувача або стану сторінки.
+                              </p>
+                              <p>
+                                Це лише загальний опис
+                                елементів JavaScript на цьому сайті.
+                              </p>
+                              <a
+                                target="_blank"
+                                href="https://github.com/Moonamee/Bright-Light-Produser-Personal-Site/blob/main/js/script.js"
+                                >git js...</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main-project-background"></div>
+                        <div class="main-project-media">
+                            <button
+                              class="main-project__view"
+                              id="view-slide2"
+                            >
+                            Відкрити
+                            </button>
+                          <div id="popup-slide2">
+                            <div class="popup-content2">
+                              <iframe
+                                class="window-container"
+                                src="https://moonamee.github.io/Bright-Light-Produser-Personal-Site/"
+                              ></iframe>
+                            </div>
+                            <div class="popup-side-panel">
+                              <div class="side-panel__content">
+                                <i
+                                  class="bx bxs-x-circle close-button"
+                                  id="close-slide2"
+                                ></i>
+                                <i class="bx bx-devices devices2"
+                                  ></i
+                                >
+                                <a target="_blank" href="https://github.com/Moonamee/Bright-Light-Produser-Personal-Site" class='bx bxl-github'></a>  
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project-monitor__cover">
+                            <img
+                              src="./img/main/project/cover_brightlight_mobile.png"
+                              alt="Aperture"
+                            >
+                          </div>
+                          <div class="project-monitor">
+                            <img
+                              src="./img/main/project/cover_brightlight.png"
+                              alt="Monitor"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- SLIDE 3 -->
+                  <li class="splide__slide">
+                    <div class="main-project">
+                      <div class="main-project-wrapper">
+                        <div class="main-project-container">
+                          <div class="project-form">
+                            <p>Taster</p>
+                            <span>Платформа та швидкий старт рестораторів</span>
+                            <span
+                              >Цей сайт є веб-сторінкою про компанію, 
+                              пов'язану з ресторанним бізнесом. 
+                              Сайт містить шапку з логотипом та навігаційним
+                              меню, основний контент з такими розділами, як "Шапка",
+                              "Про компанію", "Статистика" та "Більше", а також футер
+                              з додатковими посиланнями та інформацією про
+                              автора сайту. Сторінка має адаптивний
+                              дизайн та пропонує зручну навігацію по
+                              розділам.</span
+                            >
+                            <div class="form-option__text_adaptive">
+                              <span>Адаптив:</span>
+                              <span>Настільний / Планшет / Мобільний</span>
+                            </div>
+                            <img class="project-form-cover" src="./img/main/project/taster.jpg" alt="Taster">
+                            <div class="project-form__button">
+                              <button onclick="window.open('https://github.com/Moonamee/Taster-Eat-landing-page', '_blank')">Git</button>
+                              <button onclick="window.open('https://moonamee.github.io/Taster-Eat-landing-page', '_blank')">Наживо</button>
+                              <button id="readMoreButtonTaster">Детальніше</button>
+                            </div>
+                          </div>
+                          <div id="popupReadMoreTaster" class="popupReadMore">
+                            <i
+                              class="bx bxs-left-arrow-circle closeReadMore"
+                              id="closeReadMoreTaster"
+                            ></i>
+                            <div class="popupReadMore-content">
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_taster.png"
+                                alt="Taster"
+                              >
+                              <span
+                                >Цей сайт є веб-сторінкою, пов'язаною з
+                                ресторанною індустрією.</span
+                              >
+                              <p>
+                                1. Сайт містить шапку з логотипом та навігацією
+                                меню, основний зміст з такими розділами, як
+                                "Заголовок", "Відкрий для себе", "Статистика" та "Більше",
+                                та нижній колонтитул з додатковими посиланнями.
+                              </p>
+
+                              <p>
+                                2. Сайт пропонує інформацію про компанію, запрошує рестораторів приєднатися до
+                                Taster і запускати віртуальні ресторани
+                                на базі існуючої кухні.
+                              </p>
+                              <p>
+                                3. Також підкреслюється, що Taster - це
+                                колекція онлайн-ресторанів, які
+                                присвячені наданню найкращих страв вуличної їжі.
+                              </p>
+                              <p>
+                                4. Веб-сайт має адаптивний дизайн та
+                                пропонує зручну навігацію по розділах.
+                              </p>
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_taster_mobile.png"
+                                alt="Taster"
+                              >
+                              <span>JavaScript</span>
+                              <p>Код виконує наступні функції:</p>
+                              <p>
+                                1. AOS.init(); - ініціалізує бібліотеку AOS (Animate On
+                                Scroll), яка анімацію до елементів при прокручуванні сторінки.
+                              </p>
+                              <p>
+                                2. Меню бургера: Натискання на елемент з
+                                класом "mobile div" додає/видаляє класи "active", "open"
+                                і "show" з відповідних елементів
+                                з класами "mobileDiv", "mobileNav" і
+                                "mobileNavUl". Це дозволяє меню бургер
+                                відображатися і ховатися при натисканні. При
+                                кліку за межами області з класом "mobile",
+                                класи "active", "open" і "show" елементів з класами "mobileDiv", "mobileNav"
+                                і "mobileNavUl" видаляються. Це дозволяє приховати меню
+                                меню бургера ховатися при кліці за межами
+                                його області. Для кожного елемента списку з класом "mobile
+                                ul li", задається затримка анімації за допомогою
+                                властивість "animationDelay".
+                              </p>
+                              <p>
+                                3. accordion: Отримує всі елементи з класом
+                                "accordion" і додає обробник події "click" для
+                                для кожного елемента. Коли елемент акордеона натискається, він перемикає "активний" клас та
+                                змінює стиль відображення наступного елемента
+                                (панелі). Якщо стиль відображення встановлено як "flex",
+                                він змінюється на "none", і навпаки. Цей код
+                                відповідає за меню бургер та акордеон
+                                на веб-сторінці.
+                              </p>
+                              <a
+                                target="_blank"
+                                href="https://github.com/Moonamee/Taster-Eat-landing-page/blob/main/js/script.js"
+                                >git js...</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main-project-background"></div>
+                        <div class="main-project-media">
+                          <button
+                            class="main-project__view"
+                            id="view-slide3"
+                            >
+                            Відкрити
+                          </button>
+                          <div id="popup-slide3">
+                            <div class="popup-content3">
+                              <iframe
+                                class="window-container"
+                                src="https://moonamee.github.io/Taster-Eat-landing-page/"
+                              ></iframe>
+                            </div>
+                            <div class="popup-side-panel">
+                              <div class="side-panel__content">
+                                <i
+                                  class="bx bxs-x-circle close-button"
+                                  id="close-slide3"
+                                ></i>
+                                <i class="bx bx-devices devices3"
+                                  ></i
+                                >
+                                <a target="_blank" href="https://github.com/Moonamee/Taster-Eat-landing-page" class='bx bxl-github'></a>  
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project-monitor__cover">
+                            <img
+                              src="./img/main/project/cover_taster_mobile.png"
+                              alt="Aperture"
+                            >
+                          </div>
+                          <div class="project-monitor">
+                            <img
+                              src="./img/main/project/cover_taster.png"
+                              alt="Monitor"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- SLIDE 4 -->
+                  <li class="splide__slide">
+                    <div class="main-project">
+                      <div class="main-project-wrapper">
+                        <div class="main-project-container">
+                          <div class="project-form">
+                            <p>Farmzi</p>
+                            <span>Садівництво та Землеробство</span>
+                            <span
+                              >Цей сайт є веб-сторінкою з інформацією про
+                              компанію, що пропонує послуги з догляду за садом та ландшафтним дизайном
+                              послуги. На сайті є розділи, що включають в себе
+                              інформація про компанію, послуги, команда, клієнти, останні новини
+                              та контактні дані.</span
+                            >
+                            <div class="form-option__text_adaptive">
+                              <span>Адаптив:</span>
+                              <span>Настільний / Планшет / Мобільний</span>
+                            </div>
+                            <img class="project-form-cover" src="./img/main/project/farmzi.jpg" alt="Farmzi">
+                            <div class="project-form__button">
+                              <button onclick="window.open('https://github.com/Moonamee/Farmzi-landing-nature', '_blank')">Git</button>
+                              <button onclick="window.open('https://moonamee.github.io/Farmzi-landing-nature', '_blank')">Наживо</button>
+                              <button id="readMoreButtonFarmzi">Детальніше</button>
+                            </div>
+                          </div>
+                          <div id="popupReadMoreFarmzi" class="popupReadMore">
+                            <i
+                              class="bx bxs-left-arrow-circle closeReadMore"
+                              id="closeReadMoreFarmzi"
+                            ></i>
+                            <div class="popupReadMore-content">
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_farmzi.png"
+                                alt="Farmzi"
+                              >
+                              <span
+                                >Цей сайт є веб-платформою, присвяченою
+                                садівництва та ландшафтного дизайну.</span
+                              >
+                              <p>
+                                1. На головній сторінці сайту є яскравий і привабливий блок 
+                                героя, який привертає увагу відвідувачів і знайомить їх з 
+                                садівничою атмосферою. Тут можна знайти надихаючі 
+                                цитати та запрошення ознайомитися з усіма послугами, 
+                                які пропонує компанія.
+                              </p>
+                              <p>
+                                2. На сторінці "Про нас" ви можете знайти детальну
+                                інформацію про саму компанію, її
+                                досвід та підхід до садівництва. Тут також
+                                розміщені фотографії та описи ключових членів команди
+                                щоб відвідувачі могли ближче познайомитися з
+                                фахівцями, які працюють у компанії.
+                              </p>
+                              <p>
+                                3. Розділ "Послуги" пропонує детальний
+                                опис різних видів послуг
+                                які надає компанія. Тут ви можете знайти
+                                інформацію про посадку квітів, вирощування
+                                дерев, видалення бур'янів та поливу саду.
+                                Кожна послуга супроводжується фотографіями та описом
+                                переваг.
+                              </p>
+                              <p>
+                                4. Компанія також пропонує відеоінтро, яке
+                                можна переглянути на сайті. Це дозволяє
+                                відвідувачам побачити роботу компанії та почати
+                                здійснювати свої мрії про власний сад.
+                              </p>
+                              <p>
+                                5. На сайті також є розділи "Команда" та "Щасливі
+                                Клієнти", в яких розміщені фотографії та
+                                відгуки про роботу компанії. Це дозволяє
+                                відвідувачам дізнатися про професіоналізм та
+                                та якість послуг, що надаються.
+                              </p>
+                              <p>
+                                6. На сайті також є розділ "Останні новини"
+                                де зібрані корисні поради щодо садівництва та ландшафтного дизайну.
+                                поради та підказки. Тут ви можете знайти статті
+                                про правильний догляд за садом, вибір рослин та
+                                інші цікаві теми.
+                              </p>
+                              <p>
+                                7. Внизу сторінки знаходиться колонтитул з
+                                контактною інформацією компанії та посиланням на
+                                розробника сайту. Тут також розміщені посилання на
+                                соціальні мережі компанії, де відвідувачі можуть
+                                дізнатися більше та зв'язатися з командою.
+                              </p>
+                              <p>
+                                8. Загалом, цей сайт пропонує повну платформу
+                                для тих, хто цікавиться садівництвом та ландшафтним
+                                дизайном. Він надає інформацію, натхнення
+                                та послуги, необхідні для створення та підтримки
+                                красивого саду.
+                              </p>
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_farmzi_mobile.png"
+                                alt="Farmzi"
+                              >
+                              <span>JavaScript</span>
+                              <p>
+                                JavaScript-код виконує наступні дії:
+                              </p>
+                              <p>
+                                1. При натисканні на елементи всередині блоку
+                                з класом "mobile div", відбувається наступне:
+                                Елементи з класом "mobile div" перемикають клас
+                                "active". Елементи з класом "mobile nav"
+                                перемикають клас "open". Елементи з класом "mobile
+                                nav ul" перемикають клас "show".
+                              </p>
+                              <p>
+                                2. У циклі відбувається наступне: Для кожного
+                                li всередині списку з класом "mobile
+                                ul", застосовується стиль CSS з анімацією затримки. 
+                                Анімація затримки розраховується на основі індексу елемента.
+                              </p>
+                              <p>
+                                3. Далі йде код для акордеону: Всіелементи з класом 
+                                "accordion".  Для кожного елемента додається обробник 
+                                події "click". При натисканні на елемент відбувається 
+                                перемикання "active" класу і наступний елемент (панель) 
+                                відображається/приховується.
+                              </p>
+                              <p>
+                                Цей код використовує бібліотеку jQuery для роботи з
+                                DOM-елементами і плагін Swiper для створення
+                                слайдера. Він також містить код для створення
+                                акордеона без використання jQuery.
+                              </p>
+                              <a
+                                target="_blank"
+                                href="https://github.com/Moonamee/Farmzi-landing-nature/blob/main/js/script.js"
+                                >git js...</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main-project-background"></div>
+                        <div class="main-project-media">
+                            <button
+                              class="main-project__view"
+                              id="view-slide4"
+                            >
+                            Відкрити
+                            </button>
+                          <div id="popup-slide4">
+                            <div class="popup-content4">
+                              <iframe
+                                class="window-container"
+                                src="https://moonamee.github.io/Farmzi-landing-nature/"
+                              ></iframe>
+                            </div>
+                            <div class="popup-side-panel">
+                              <div class="side-panel__content">
+                                <i
+                                  class="bx bxs-x-circle close-button"
+                                  id="close-slide4"
+                                ></i>
+                                <i class="bx bx-devices devices4"
+                                  ></i
+                                >
+                                <a target="_blank" href="https://github.com/Moonamee/Farmzi-landing-nature" class='bx bxl-github'></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project-monitor__cover">
+                            <img
+                              src="./img/main/project/cover_farmzi_mobile.png"
+                              alt="Aperture"
+                            >
+                          </div>
+                          <div class="project-monitor">
+                            <img
+                              src="./img/main/project/cover_farmzi.png"
+                              alt="Monitor"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- SLIDE 5 -->
+                  <li class="splide__slide">
+                    <div class="main-project">
+                      <div class="main-project-wrapper">
+                        <div class="main-project-container">
+                          <div class="project-form">
+                            <p>Ozart</p>
+                            <span>Портфоліо UX/UI дизайнера</span>
+                            <span
+                              >Цей сайт є портфоліо UX/UI дизайнера,
+                              продуктового дизайнера, творця контенту та креативного
+                              директора. Сайт містить розділи, в яких представлена
+                              інформація про дизайнерку, її навички та
+                              досвід. На головній сторінці є вітальна зона з
+                              фотографією дизайнерки та коротким описом
+                              її навичок.</span
+                            >
+                            <div class="form-option__text_adaptive">
+                              <span>Адаптив:</span>
+                              <span>Настільний / Планшет / Мобільний</span>
+                            </div>
+                            <img class="project-form-cover" src="./img/main/project/ozart.jpg" alt="Ozart">
+                            <div class="project-form__button">
+                              <button onclick="window.open('https://github.com/Moonamee/Ozart-Landing-Portfolio', '_blank')">Git</button>
+                              <button onclick="window.open('https://moonamee.github.io/Ozart-Landing-Portfolio', '_blank')">Наживо</button>
+                              <button id="readMoreButtonOzart">Детальніше</button>
+                            </div>
+                          </div>
+                          <div id="popupReadMoreOzart" class="popupReadMore">
+                            <i
+                              class="bx bxs-left-arrow-circle closeReadMore"
+                              id="closeReadMoreOzart"
+                            ></i>
+                            <div class="popupReadMore-content">
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_ozart.png"
+                                alt="Ozart"
+                              >
+                              <span>Сайт описується наступним чином:</span>
+                              <p>
+                                1. Шапка сайту: Логотип, який є посиланням на
+                                головну сторінку. Кнопка пошуку, при натисканні на яку
+                                відкриває поле для введення запиту. Навігаційне
+                                меню, яке містить розділи "Головна", "Про мене",
+                                "Подарунки" та "Контакти".
+                              </p>
+                              <p>
+                                2. Основна частина сайту: Шапка сайту
+                                що містить привітання та інформацію про
+                                дизайнера. Фотографія дизайнера.
+                              </p>
+                              <p>
+                                3. Соціальні мережі: Іконки для доступу до
+                                профілів дизайнера в соціальних мережах.
+                              </p>
+                              <p>
+                                4. Розділ "Про мене": Коротке відео про
+                                дизайнера.
+                              </p>
+                              <p>
+                                5. Розділ "Що я роблю": Блок, що описує
+                                три сфери діяльності дизайнера: "Ui & UX
+                                Дизайн", "Графічний дизайн" та "Веб-розробка".
+                              </p>
+                              <p>
+                                6. Портфоліо: Фільтри для вибору категорії
+                                роботи. Галерея із зображеннями проектів.
+                              </p>
+                              <p>
+                                7. Розділ "Відгуки клієнтів": Замовник відгук про роботу дизайнера.
+                              </p>
+                              <p>
+                                8. Розділ "Зв'язатися з нами": Заголовок та
+                                опис, що заохочує зв'язатися з
+                                дизайнером. Кнопка "Зв'язатися" для переходу до
+                                контактної форми. Соціальні мережі дизайнера.
+                              </p>
+                              <p>
+                                9. Розділ "Мій блог": Назва розділу. Запис у блозі
+                                картки з датою, кількістю коментарів, вподобань,
+                                автором та коротким описом.
+                              </p>
+                              <p>
+                                10. Нижній колонтитул: Інформація про дизайнера та
+                                як з ним зв'язатися. Копірайт і посилання
+                                на автора шаблону.
+                              </p>
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_ozart_mobile.png"
+                                alt="Ozart"
+                              >
+                              <span>JavaScript</span>
+                              <p>
+                                Код, який виконує різні дії на веб-сторінці. Ось його пояснення:
+                              </p>
+                              <p>
+                                1. `$(".popup").css ("display", "none");` - Встановлює
+                                початкове значення властивості CSS `display`
+                                для елемента з класом "popup" як "none",
+                                що спочатку приховує його.
+                              </p>
+                              <p>
+                                2. Обробник кліків на кнопках меню бургерів: Додає метод
+                                обробник події кліку на кнопці меню бургерів. При натисканні кнопки
+                                перемикає "активний" клас для кнопки та меню, що дозволяє анімувати
+                                відображення та приховування меню.
+                              </p>
+                              <img
+                                src="./img/main/project/code_ozart_2.jpg"
+                                alt="code2"
+                              >
+                              <p>
+                                3. Обробник кліку на зображенні в галереї портфоліо: Додає обробник кліку на зображенні
+                                всередині елемента з класом
+                                "portfolio-gallery-box". При натисканні на зображення, отримує його шлях до джерела і встановлює його в атрибут
+                                `src` атрибуту зображення всередині елемента
+                                з класом "popup". Потім за допомогою методу `fadeIn()`
+                                плавно відображає елемент з класом
+                                класом "popup".
+                              </p>
+                              <img
+                                src="./img/main/project/code_ozart_3.jpg"
+                                alt="code2"
+                              >
+                              <p>
+                                4. Обробник кліку на кнопці закриття спливаючого вікна: $(".close").click(function () {
+                                $(".popup").fadeOut(); }); Додає обробник кліку
+                                до елементу з класом "close". При натисканні на кнопку закриття
+                                за допомогою методу `fadeOut()` плавно приховує елемент, з класом "popup".
+                              </p>
+                              <img
+                                src="./img/main/project/code_ozart_4.jpg"
+                                alt="code2"
+                              >
+                              <p>
+                                5. Обробник для кліку на області навколо
+                                щоб закрити спливаюче вікно: $(".popup-wrap").click(function
+                                () { $(".popup").fadeOut(); }); Додає обробник кліку
+                                до елементу з класом
+                                "popup-wrap". При натисканні на область навколо
+                                спливаючого вікна, за допомогою методу `fadeOut()`,
+                                плавно ховає елемент з класом "popup".
+                              </p>
+                              <img
+                                src="./img/main/project/code_ozart_5.jpg"
+                                alt="code2"
+                              >
+                              <p>
+                                6. Функція `toggleSearchInput()` для перемикання
+                                відображення поля пошуку: Отримує посилання на
+                                на елементи з класами "search_input" та
+                                "search_img". При виклику функції
+                                перевіряється поточне значення властивості CSS `display`
+                                для поля пошуку. Якщо воно дорівнює
+                                "block", вона приховує поле пошуку і видаляє
+                                клас "clicked" з елемента з класом
+                                "search_img". Якщо значення не дорівнює
+                                "block", то відображається поле пошуку і додається клас
+                                "clicked" до елемента з класом
+                                "search_img".
+                              </p>
+                              <img
+                                src="./img/main/project/code_ozart_6.jpg"
+                                alt="code2"
+                              >
+                              <p>
+                                7. Обробник кліку за межами поля пошуку, щоб
+                                приховати його: Додає до документа обробник клацання.
+                                При натисканні поза полем пошуку і
+                                елемента з класом "search_img", ховає поле пошуку
+                                поле пошуку і видаляє клас "clicked"
+                                з елемента з класом "search_img".
+                              </p>
+                              <img
+                                src="./img/main/project/code_ozart_7.jpg"
+                                alt="code2"
+                              >
+                              <p>
+                                Цей код відповідає за функціональність
+                                спливаючого вікна, меню бургерів, галереї портфоліо та
+                                поля пошуку на веб-сторінці.
+                              </p>
+                              <a
+                                target="_blank"
+                                href="https://github.com/Moonamee/Ozart-Landing-Portfolio/blob/main/js/script.js"
+                                >git js...</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main-project-background"></div>
+                        <div class="main-project-media">
+                          <button
+                              class="main-project__view"
+                              id="view-slide5"
+                            >
+                            Відкрити
+                          </button>
+                          <div id="popup-slide5">
+                            <div class="popup-content5">
+                              <iframe
+                                class="window-container"
+                                src="https://moonamee.github.io/Ozart-Landing-Portfolio/"
+                              ></iframe>
+                            </div>
+                            <div class="popup-side-panel">
+                              <div class="side-panel__content">
+                                <i
+                                  class="bx bxs-x-circle close-button"
+                                  id="close-slide5"
+                                ></i>
+                                <i class="bx bx-devices devices5"
+                                  ></i
+                                >
+                                <a target="_blank" href="https://github.com/Moonamee/Ozart-Landing-Portfolio" class='bx bxl-github'></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project-monitor__cover">
+                            <img
+                              src="./img/main/project/cover_ozart_mobile.png"
+                              alt="Aperture"
+                            >
+                          </div>
+                          <div class="project-monitor">
+                            <img
+                              src="./img/main/project/cover_ozart.png"
+                              alt="Monitor"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- SLIDE 6 -->
+                  <li class="splide__slide">
+                    <div class="main-project">
+                      <div class="main-project-wrapper">
+                        <div class="main-project-container">
+                          <div class="project-form">
+                            <p>Minimal Player</p>
+                            <span>UX/UI React Native Додаток</span>
+                            <span
+                              >Цей плеєр є компонентом React Native для
+                              для відтворення аудіофайлів. Загалом, цей плеєр є
+                              не тільки потужний інструмент для відтворення аудіофайлів,
+                              але й справжнім витвором мистецтва, який привертає
+                              увагу та створює приємну атмосферу для
+                              насолоди музикою.</span
+                            >
+                            <div class="player-cover__wrapp">
+                              <img class="project-form-cover__player" src="./img/main/project/cover_rn_1.png" alt="Player1">
+                              <img class="project-form-cover__player" src="./img/main/project/cover_rn_2.png" alt="Player2">
+                              <img class="project-form-cover__player" src="./img/main/project/cover_rn_3.png" alt="Player3">
+                            </div>
+                            <div class="project-form__button">
+                              <button onclick="window.open('https://github.com/Moonamee/Minaimal-Player', '_blank')">Git</button>
+                              <button id="readMoreButtonPlayer">Детальніше</button>
+                            </div>
+                          </div>
+                          <div id="popupReadMorePlayer" class="popupReadMore">
+                            <i
+                              class="bx bxs-left-arrow-circle closeReadMore"
+                              id="closeReadMorePlayer"
+                            ></i>
+                            <div class="popupReadMore-content">
+                              <div class="player-cover__wrapp-popup">
+                                <img class="project-form-cover__player-popup" src="./img/main/project/cover_rn_2.png" alt="Player2">
+                              </div>
+                              <span>Цей плеєр - справжній витвір мистецтва!</span>
+                              <p>
+                                1. Він має красивий та елегантний дизайн, який
+                                привертає погляд і створює приємну
+                                атмосферу.
+                              </p>
+                              <p>
+                                2. Він має всі необхідні функції для повного
+                                контролю над відтворенням аудіо.
+                              </p>
+                              <p>
+                                3. Інтерфейс плеєра включає стильні
+                                кнопки керування, такі як відтворення, перемотування, пауза та
+                                повтор.
+                              </p>
+                              <p>
+                                4. Вони розміщені таким чином, щоб забезпечити зручність
+                                використання та зручність навігації.
+                              </p>
+                              <p>
+                                5. Плеєр використовує AudioContext, який
+                                дозволяє отримати доступ до інформації про
+                                поточний аудіофайл та керування відтворенням
+                                функціями відтворення.
+                              </p>
+                              <p>
+                                6. Це забезпечує гнучкість і потужність в управлінні аудиофайлами.
+                              </p>
+                              <p>
+                                7. Особливістю цього плеєра єможливість пересуватися по треку за допомогою повзунка.
+                              </p>
+                              <p>
+                                8. Це дає змогу точно вибрати позицію відтворення 
+                                та насолоджуватися музикою в
+                                потрібний момент.
+                              </p>
+                              <p>
+                                9. Інформація про поточний трек
+                                відображається чітко та стильно.
+                              </p>
+                              <p>
+                                10. Ви можете бачити назву файлу та формат аудіо
+                                тож ви завжди будете в курсі того, що відтворюється.
+                              </p>
+                              <p>
+                                11. Всі кнопки управління зроблені з використанням
+                                різних іконок з пакету expo-vector-icons, 
+                                що надає їм унікального та привабливого вигляду.
+                              </p>
+                              <p>
+                                12. Плеєр також має гарні
+                                анімації, які створюють ефекти, коли ви натискаєте
+                                кнопки відтворення.
+                              </p>
+                              <p>
+                                13. Це додає динамічності та інтерактивності у
+                                використання плеєра.
+                              </p>
+                              <p>
+                                14. Градієнтне фонове зображення, створене за допомогою компонента
+                                LinearGradient, надає програвачу
+                                додаткової естетичної привабливості.
+                              </p>
+                              <p>
+                                15. Поєднання різних відтінків створює
+                                привабливий візуальний ефект.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main-project-background"></div>
+                        <div class="main-project-media">
+                          <div class="main-project-image">
+                            <div class="main-image-container">
+                              <img
+                                src="./img/main/project/cover_rn_1.png"
+                                alt="Player"
+                              >
+                              <img
+                                src="./img/main/project/cover_rn_2.png"
+                                alt="Player"
+                              >
+                              <img
+                                src="./img/main/project/cover_rn_3.png"
+                                alt="Player"
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- SLIDE 7 -->
+                  <!-- <li class="splide__slide slide-scroll">
+                    <div class="main-image-container__interior">
+                      <div class="top-grid-container">
+                        <div class="grid-item">
+                          <img
+                            src="./img/main/project/interior_1.jpg"
+                            alt="Interior_1"
+                            onclick="openModal(this)"
+                          >
+                        </div>
+                        <div class="grid-item">
+                          <img
+                            src="./img/main/project/interior_2.jpg"
+                            alt="Interior_2"
+                            onclick="openModal(this)"
+                          >
+                        </div>
+                        <div class="grid-item">
+                          <img
+                            src="./img/main/project/interior_3.jpg"
+                            alt="Interior_3"
+                            onclick="openModal(this)"
+                          >
+                        </div>
+                      </div>
+                      <div class="bottom-grid-container">
+                        <div class="grid-item">
+                          <img
+                            src="./img/main/project/interior_4.jpg"
+                            alt="Interior_4"
+                            onclick="openModal(this)"
+                          >
+                        </div>
+                        <div class="grid-item">
+                          <img
+                            src="./img/main/project/interior_5.jpg"
+                            alt="Interior_5"
+                            onclick="openModal(this)"
+                          >
+                        </div>
+                        <div class="grid-item">
+                          <img
+                            src="./img/main/project/interior_6.jpg"
+                            alt="Interior_6"
+                            onclick="openModal(this)"
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li> -->
+                </ul>
+              </div>
+            </section>
+          </div>
+          <!-- RESUME -->
+          <div class="swiper-slide" id="resume">
+            <div class="resume-container">
+              <div class="resume-wrapper">
+                <!-- Resume header -->
+                <div class="resume-header-container">
+                  <div class="resume-header__text">
+                    <h2>Максим Іващенко</h2>
+                    <p>Frontend розробник</p>
+                    <p>Дизайнер</p>
+                    <span
+                      >Я пристрасний веб-розробник з досвідом розробки на JavaScript, Css, Html та React.js.
+                      Дизайнер з дуже тонким смаком і розумінням деталей. Я постійно прагну до досконалості і прагну досягти високих результатів у своїй роботі. Я добре розумію користувацький досвід і можу створювати привабливі та інтуїтивно зрозумілі дизайни. Мої навички включають створення адаптивних веб-сайтів, пошукову оптимізацію і багато іншого. Я також маю досвід роботи в команді і можу ефективно співпрацювати з іншими розробниками та дизайнерами. Я завжди готовий до нових викликів і прагну постійно вчитися та розвивати свої навички. Впевнений, що мої знання та досвід дозволять мені успішно виконувати завдання веб-розробника та дизайнера.
+                      </span
+                    >
+                  </div>
+                  <div class="resume-header__contact">
+                    <div class="resume-header__contact-item">
+                      <img src="./img/main/resume/mail.svg" alt="mail">
+                      <a class="mailto" href="mailto:maxgleroy@gmail.com"
+                        >maxgleroy@gmail.com</a
+                      >
+                    </div>
+                    <div class="resume-header__contact-item">
+                      <div class="phone-icon">
+                        <img src="./img/main/resume/phone.svg" alt="phone">
+                      </div>
+                      <div class="phone-item">
+                        <span>+38 066 639 28 39</span>
+                        <p>Україна, Кривий Ріг</p>
+                      </div>
+                      <div class="contact-apply-item">
+                        <img
+                          src="./img/main/resume/telegram.svg"
+                          alt="telegram"
+                        >
+                        <img
+                          src="./img/main/resume/whatsapp.svg"
+                          alt="whatsapp"
+                        >
+                        <img src="./img/main/resume/viber.svg" alt="viber">
+                      </div>
+                    </div>
+                    <div class="resume-header__contact-item">
+                      <img src="./img/main/resume/github.svg" alt="github">
+                      <a target="_blank" href="https://github.com/Moonamee"
+                        ><span>Сторінка на Github</span></a
+                      >
+                    </div>
+                    <div class="resume-header__contact-item">
+                      <img src="./img/main/resume/in.svg" alt="linkedin">
+                      <a
+                        target="_blank"
+                        href="https://www.linkedin.com/in/max-ivashchenko-7b8337290/"
+                        ><span>Сторінка в Linkedin</span></a
+                      >
+                    </div>
+                    <div class="resume-header__contact-item">
+                      <img
+                        src="./img/main/resume/download.svg"
+                        alt="download"
+                      >
+                      <a href="./doc/Resume%20Maksym%20Ivashchenko_ua.pdf" download
+                        ><span>Завантажити</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Resume skills -->
+                <div class="resume-skills-container">
+                  <div class="resume-skills__content">
+                    <div class="skills-background-img"></div>
+                    <div class="skills-content">
+                      <h3>Навички</h3>
+                      <div class="skills-content__frontend">
+                        <span>Використовую у фронтенді:</span>
+                        <ul>
+                          <li>JavaScript</li>
+                          <li>CSS</li>
+                          <li>HTML</li>
+                          <li>React JS / Native</li>
+                        </ul>
+                        <div class="skills-scales-frontend">
+                          <div class="skills-js-bg">
+                            <div class="skills-js"></div>
+                          </div>
+                          <div class="skills-css-bg">
+                            <div class="skills-css"></div>
+                          </div>
+                          <div class="skills-html-bg">
+                            <div class="skills-html"></div>
+                          </div>
+                          <div class="skills-react-bg">
+                            <div class="skills-react"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="skills-content__design">
+                        <span>Використовую в дизайні:</span>
+                        <ul>
+                          <li>Figma</li>
+                          <li>Adobe Photoshop</li>
+                          <li>Adobe Illustrator</li>
+                          <li>Adobe XD</li>
+                          <li>Autodesk 3ds Max</li>
+                        </ul>
+                        <div class="skills-scales-design">
+                          <div class="skills-fig-bg">
+                            <div class="skills-fig"></div>
+                          </div>
+                          <div class="skills-phot-bg">
+                            <div class="skills-phot"></div>
+                          </div>
+                          <div class="skills-illust-bg">
+                            <div class="skills-illust"></div>
+                          </div>
+                          <div class="skills-xd-bg">
+                            <div class="skills-xd"></div>
+                          </div>
+                          <div class="skills-3ds-bg">
+                            <div class="skills-3ds"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="skills-dividing-line"></div>
+                      <div class="skills-content__flow">
+                        <ul>
+                          <li>
+                            Роблю адаптивні та кросбраузерні верстки, намагаюся
+                            використовувати найкращі технології та завжди вивчати нові.
+                          </li>
+                          <li>
+                            Активно цікавлюсь штучним інтелектом 
+                            та широко використовую його в проектах.
+                          </li>
+                          <li>
+                            Володію англійською мовою на середньому рівні, 
+                            читаю / слухаю / письмово.
+                          </li>
+                          <li>Розробка фірмового стилю, логотипу.</li>
+                          <li>Знання графічних програм.</li>
+                          <li>Креативність, відчуття кольору та стилю.</li>
+                          <li>Активно слідкую за трендами в дизайні.</li>
+                          <li>Точність, старанність, увага до деталей.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Resume EDU -->
+                <div class="resume-edu-container">
+                  <div class="resume-edu-wrapper">
+                    <div class="resume-edu-form">
+                      <div class="resume-edu-content">
+                        <div class="edu-background-img"></div>
+                        <div class="resume-edu__text_1">
+                          <h3>Освіта</h3>
+                          <span>2005-2011</span>
+                          <p>
+                            Відкритий міжнародний університет розвитку людини "Україна".
+                          </p>
+                          <p
+                            data-first-color="Спеціальність:"
+                            data-last-color=" 'Дизайн'."
+                          ></p>
+                          <p
+                            data-first-color="Кваліфікація:"
+                            data-last-color=" 'Дизайн інтер'єрів та обладнання'."
+                          ></p>
+                          <span>2010-2011</span>
+                          <p>
+                            Міжрегіональна академія бізнесу і права імені
+                            Н. Кручиніної Сертифікат за
+                            успішне проходження повного курсу навчання за програмою
+                            "Веб-дизайн".
+                          </p>
+                        </div>
+                        <div class="resume-edu__text_2">
+                          <h3>Досвід</h3>
+                          <span
+                            >Фріланс веб-розробник (травень - жовтень 2023).
+                          </span>
+                          <p>
+                            Розроблено аудіоплеєр, дизайн плеєра з використанням Adobe
+                            Photoshop / Figma / React Native.
+                          </p>
+                          <p>
+                            Розробляв веб-сайти з використанням Html / Css / JavaScript та
+                            JS бібліотек.
+                          </p>
+                        </div>
+                        <div class="resume-footer">
+                          <span
+                            >Ці та інші проекти доступні на моїй сторінці</span
+                          >
+                          <a target="_blank" href="https://github.com/Moonamee"
+                            >Github.</a
+                          >
+                          <div class="resume-form__button">
+                            <button onclick="downloadFileUa()">
+                              Завантажити CV
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CONTACT -->
+          <div class="swiper-slide" id="contact">
+            <div class="contact-container">
+              <div class="contact-wrapper">
+                <div class="contact-social__content">
+                  <div class="contact-social__form">
+                    <div class="social__form-button">
+                      <div class="form-button">
+                        <div class="icon-whatsapp item"></div>
+                        <div class="btn text-form" id="whatsappBtn">Whatsapp</div>
+                      </div>
+                      <div class="form-button">
+                        <div class="icon-telegram item"></div>
+                        <div class="btn text-form" id="telegramBtn">Telegram</div>
+                      </div>
+                      <div class="form-button">
+                        <div class="icon-insta item"></div>
+                        <div class="btn text-form" id="instagramBtn">Instagram</div>
+                      </div>
+                      <div class="form-button">
+                        <div class="icon-linkedin item"></div>
+                        <div class="btn text-form" id="linkedinBtn">Linkedin</div>
+                      </div>
+                      <div class="form-button">
+                        <div class="icon-git item"></div>
+                        <div class="btn text-form" id="githubBtn">Github</div>
+                      </div>
+                      <div class="form-button">
+                        <div class="icon-fb item"></div>
+                        <div class="btn text-form" id="facebookBtn">Facebook</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-massage__content">
+                  <div class="contact-massage__form">
+                    <form id="myForm">
+                      <div class="contact-massage__name_mail">
+                        <input type="text" id="name" placeholder="Повне ім'я" class="massage__form-name" required>
+                        <input type="email" id="email" placeholder="Ваш email" class="massage__form-email" autocomplete="email" required>
+                      </div>
+                      <div class="contact-massage">
+                        <textarea id="message" placeholder="Ваше повідомлення" class="massage__form-massage" style="resize: none;" required></textarea>
+                      </div>
+                        <button type="submit" onclick="sendEmail(event)" class="massage-button-send">
+                          <i class='bx bx-mail-send'></i>
+                            Надіслати
+                        </button>
+                      <div id="mailModal" class="mail-modal">
+                        <div class="mail-modal-content">
+                          <i class='bx bxs-error-circle' ></i>
+                          <span class="mail-close">&times;</span>
+                          <p id="mail-modal-message">Пошта</p>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <span>Розроблено та створено &copy; 2023</span>
+        <a target="_blank" href="https://github.com/Moonamee">Максим Іващенко</a>
+      </footer>
+    </div>
+    <script src="https://anijs.github.io/lib/anijs/anijs.js"></script>
+    <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/splide.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
 
