@@ -304,7 +304,7 @@
     }
 
     .massage__form-massage {
-        width: 35.5vw;
+        width: 37vw;
         height: 265px;
         font-size: 18px;
     }
@@ -530,27 +530,30 @@
 
     .contact-social__form {
         width: 95vw;
-        height: 250px;
+        height: 195px;
     }
 
     .contact-massage__form {
         width: 95vw;
-        height: 520px;
+        height: 410px;
+        margin-bottom: 80px;
     }
 
     .massage__form-email {
-        width: 35vw;
+        width: 100%;
         font-size: 18px;
     }
 
     .massage__form-name {
-        width: 35vw;
+        width: 100%;
         font-size: 18px;
+        margin-right: 20px;
     }
 
     .massage__form-massage {
-        width: 100%;
-        height: 265px;
+        display: flex;
+        width: 85vw;
+        height: 150px;
         font-size: 18px;
     }
 
@@ -559,6 +562,12 @@
         top: 30%;
         width: inherit;
         height: inherit;
+    }
+
+    .contact-massage__name_mail {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
 
     /* CONTACT */
@@ -604,9 +613,37 @@
         width: 95vw;
         height: 170px;
     }
+
+    .text-form {
+        width: 165px;
+    }
+
+
 }
 
 @media (max-width: 768px) {
+
+    /* Welcome */
+    .language-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .welcome-content h2 {
+        font-size: 22px;
+    }
+
+    .change-language span {
+        font-size: 13px;
+    }
+
+    .language-container a {
+        padding: 10px 20px 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Welcome */
+
     .splide__arrows {
         display: none;
     }
@@ -1278,6 +1315,7 @@
     /* CONTACT */
     #myForm {
         gap: 15px;
+        align-items: center;
     }
 
     .contact-social__content {
@@ -1286,6 +1324,7 @@
 
     .contact-massage__name_mail {
         display: flex;
+        align-items: center;
         flex-direction: column;
         gap: 15px;
     }
@@ -1302,6 +1341,7 @@
         width: 80vw;
         font-size: 18px;
         padding: 15px;
+        margin-right: 0;
     }
 
     .massage__form-email {
@@ -1316,7 +1356,7 @@
     }
 
     .massage__form-massage {
-        width: 75vw;
+        width: 77vw;
         height: 200px;
         font-size: 18px;
     }
@@ -1360,8 +1400,8 @@
     }
 
     .mobile-soc-icon {
-        width: 30px;
-        height: 30px
+        width: 24px;
+        height: 24px;
     }
 
     .mob-soc {
