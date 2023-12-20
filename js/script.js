@@ -1,31 +1,7 @@
-// window.onload = function() {
-//   var isFirstVisit = sessionStorage.getItem("isFirstVisit");
-//   var welcomePage = document.getElementById("welcome-page");
-
-//   if (!isFirstVisit) {
-//     welcomePage.style.display = "block";
-//   } else {
-//     welcomePage.style.display = "none";
-//   }
-
-//   document.getElementById("welcome-link").addEventListener("click", function(event) {
-//     event.preventDefault();
-//     welcomePage.style.display = "block";
-//   });
-
-//   // Add event listeners to language links
-//   var languageLinks = document.querySelectorAll(".language-container a");
-//   languageLinks.forEach(function(link) {
-//     link.addEventListener("click", function(event) {
-//       // Save the language preference in sessionStorage
-//       sessionStorage.setItem("isFirstVisit", true);
-//     });
-//   });
-// };
 document.addEventListener("DOMContentLoaded", function() {
-  var isFirstVisit = sessionStorage.getItem("isFirstVisit");
-  var welcomePage = document.getElementById("welcome-page");
-  var loadingScreen = document.getElementById("loading-screen");
+  const isFirstVisit = sessionStorage.getItem("isFirstVisit");
+  const welcomePage = document.getElementById("welcome-page");
+  const loadingScreen = document.getElementById("loading-screen");
 
   function hideLoadingScreen() {
     loadingScreen.style.transition = "opacity 1s";
@@ -40,19 +16,23 @@ document.addEventListener("DOMContentLoaded", function() {
   if (!isFirstVisit) {
     loadingScreen.style.display = "flex";
     welcomePage.style.display = "none";
-
-    setTimeout(hideLoadingScreen, 2500);
-  } else {
-    hideLoadingScreen();
   }
+  
+  window.addEventListener("load", function() {
+    hideLoadingScreen();
 
-  var languageLinks = document.querySelectorAll(".language-container a");
+    sessionStorage.setItem("isFirstVisit", true);
+  });
+
+  const languageLinks = document.querySelectorAll(".language-container a");
   languageLinks.forEach(function(link) {
     link.addEventListener("click", function(event) {
       sessionStorage.setItem("isFirstVisit", true);
     });
   });
 });
+
+
 
 
 
