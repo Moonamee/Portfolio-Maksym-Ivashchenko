@@ -1,1 +1,1872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link rel="icon" href="./favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+    <!-- SWIPER SLIDE -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <!-- SPLIDE SWIPER -->
+    <link rel="stylesheet" href="./css/splide-core.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dark.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    >
+    <title>Portfolio | Maksym Ivashchenko</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- HEADER -->
+      <header class="header" id="header">
+        <div class="header-logo">
+          <img
+            class="header-logo__light"
+            src="./img/header/logo.png"
+            alt="Logo"
+          >
+          <img
+            class="header-logo__dark"
+            src="./img/header/logo_dark.png"
+            alt="Logo"
+          >
+          <span data-first-color="Port" data-last-color="folio"></span>
+        </div>
+        <!-- DESKTOP -->
+        <nav class="header-nav">
+          <ul>
+            <li class="header-nav__link active">
+              <a id="homeLink" href="#"><i class="bx bxs-home"></i>Home</a>
+            </li>
+            <li class="header-nav__link">
+              <a id="aboutLink" href="#"
+                ><i class="bx bxs-user-rectangle"></i>About</a
+              >
+            </li>
+            <li class="header-nav__link">
+              <a id="projectLink" href="#"
+                ><i class="bx bxs-image-alt"></i>Projects</a
+              >
+            </li>
+            <li class="header-nav__link">
+              <a id="resumeLink" href="#"
+                ><i class="bx bxs-spreadsheet"></i>Resume</a
+              >
+            </li>
+            <li class="header-nav__link">
+              <a id="contactLink" href="#"
+                ><i class="bx bxs-contact"></i>Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header-right-panel">
+          <div class="header-lang-change">
+            <div class="select-trigger" onclick="toggleOptions()">
+              <span class="selected-option">EN</span>
+            </div>
+            <ul class="options">
+              <li class="option" onclick="handleOptionClick('EN')">
+                <a href="index.html">EN</a>
+              </li>
+              <li class="option" onclick="handleOptionClick('UA')">
+                <a href="index_ua.html">UA</a>
+              </li>
+            </ul>
+          </div>
+          <div class="theme-mode">
+            <img src="./img/header/theme_light__sun.svg" alt="Sun">
+          </div>
+        </div>
+      </header>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- HOME -->
+          <div class="swiper-slide" id="home">
+            <div class="main-home">
+              <div class="hero-wrapper">
+                <section class="hero-section">
+                  <div class="hero-background__primary">
+                    <div class="hero-form">
+                      <div class="hero-background__secondary home-mobile">
+                        <img
+                          class="light-image"
+                          src="./img/main/hero/hero_avatar.png"
+                          alt="Image"
+                        >
+                        <img
+                          class="dark-image"
+                          src="./img/main/hero/hero_avatar_dark.png"
+                          alt="Image"
+                        >
+                      </div>
+                      <p>Hi There!</p>
+                      <h2>my name is Maksym</h2>
+                      <h3>
+                        <i class="bx bxs-right-arrow-alt"></i>
+                        Frontend developer
+                      </h3>
+                      <h3>
+                        <i class="bx bxs-right-arrow-alt"></i>
+                        Designer
+                      </h3>
+                    </div>
+                  </div>
+                </section>
+                <div class="hero-background__secondary home-desktop">
+                  <img
+                    class="light-image"
+                    src="./img/main/hero/hero_avatar.png"
+                    alt="Image"
+                  >
+                  <img
+                    class="dark-image"
+                    src="./img/main/hero/hero_avatar_dark.png"
+                    alt="Image"
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ABOUT -->
+          <div class="swiper-slide" id="about">
+            <div class="main-about">
+              <div class="hero-about-wrapper">
+                <section class="hero-about-section">
+                  <div class="hero-about-background__primary">
+                    <div class="hero-about-form">
+                      <p>Hi, I'm</p>
+                      <h1>Maksym Ivashchenko</h1>
+                      <h3>
+                        <i class="bx bxs-right-arrow-alt"></i>
+                        Frontend developer
+                      </h3>
+                      <h3>
+                        <i class="bx bxs-right-arrow-alt"></i>
+                        Designer (Web, UI/UX, 3D, Interior)
+                      </h3>
+                      <span>// web development </span>
+                      <span
+                        >A Software Developer having an experience of building
+                        Web and Mobile applications with HTML / CSS / JavaScript
+                        / React Native.</span
+                      >
+                      <span>// clean web & ui/ux design</span>
+                      <span
+                        >Experience and sense of taste in Design. I work
+                        professionally in Figma / Adobe Photoshop / Illustrator
+                        / XD / Autodesk 3ds Max.</span
+                      >
+                      <div class="about-form__button">
+                        <button onclick="downloadFile()">Download CV</button>
+                        <button id="aboutReadMore">Resume</button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <div class="about-right-panel__wrapper">
+                  <div class="hero-about-background__secondary">
+                    <img
+                      class="light-image"
+                      src="./img/main/about/hero_avatar.png"
+                      alt="Image"
+                    >
+                    <img
+                      class="dark-image"
+                      src="./img/main/about/hero_avatar_bw.png"
+                      alt="Image"
+                    >
+                  </div>
+                  <div class="about-social-container">
+                    <div class="social-content">
+                      <div class="light-image-mode">
+                        <a target="_blank" href="https://github.com/Moonamee">
+                          <img src="./img/main/about/light_soc_github.svg" alt="GitHub">
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/max-ivashchenko-7b8337290/">
+                          <img src="./img/main/about/light_soc_linkedin.svg" alt="Linkedin">
+                        </a>
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100082964130525">
+                          <img src="./img/main/about/light_soc_fb.svg" alt="Facebook">
+                        </a>
+                        <a
+                          target="_blank"
+                          href="https://www.instagram.com/maxgleroy/?hl=en"
+                          ><img
+                            src="./img/main/about/light_soc_instagram.svg"
+                            alt="Instagram"
+                        ></a>
+                      </div>
+                      <div class="dark-image-mode">
+                        <a target="_blank" href="https://github.com/Moonamee"
+                          ><img
+                            src="./img/main/about/light_soc_github_darkmode.svg"
+                            alt="GitHub"
+                        ></a>
+                        <a
+                          target="_blank"
+                          href="https://www.linkedin.com/in/max-ivashchenko-7b8337290/"
+                          ><img
+                            src="./img/main/about/light_soc_linkedin_darkmode.svg"
+                            alt="Linkedin"
+                        ></a>
+                        <a
+                          target="_blank"
+                          href="https://www.facebook.com/profile.php?id=100082964130525"
+                          ><img
+                            src="./img/main/about/light_soc_fb_darkmode.svg"
+                            alt="Facebook"
+                        ></a>
+                        <a
+                          target="_blank"
+                          href="https://www.instagram.com/maxgleroy/?hl=en"
+                          ><img
+                            src="./img/main/about/light_soc_instagram_darkmode.svg"
+                            alt="Instagram"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PROJECT -->
+          <div class="swiper-slide" id="project">
+            <section class="splide" aria-label="Splide Basic HTML Example">
+              <div class="my-slider-progress">
+                <div class="my-slider-progress-bar"></div>
+              </div>
+              <div class="splide__arrows">
+                <!-- Light mode -->
+                <button
+                  class="splide__arrow splide__arrow--prev"
+                  id="prevButton"
+                >
+                  <i class="bx bxs-chevron-left-circle splide-circle"></i>
+                </button>
+                <button class="splide__arrow splide__arrow--next" id="prevNext">
+                  <i class="bx bxs-chevron-right-circle splide-circle"></i>
+                </button>
+              </div>
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <!-- SLIDE 1 -->
+                  <li class="splide__slide">
+                    <div class="main-project">
+                      <div class="main-project-wrapper">
+                        <div class="main-project-container">
+                          <div class="project-form">
+                            <p>Aperture Studios</p>
+                            <span>Photographer & Filmmaker</span>
+                            <span
+                              >This is the basic layout of a photographer's
+                              website. Smooth animation has been made,
+                              suggestive pop-up elements focusing attention on
+                              the main details. The black minimalistic design of
+                              the site makes it possible to focus on the photo
+                              and penetrate into the essence.</span
+                            >
+                            <div class="project-form__options">
+                              <div class="form-option__text_adaptive">
+                                <span>Adaptive:</span>
+                                <span>Desktop / Tablet / Mobile</span>
+                              </div>
+                            </div>
+                            <img
+                              class="project-form-cover"
+                              src="./img/main/project/aperture.jpg"
+                              alt="Aper"
+                            >
+                            <div class="project-form__button">
+                              <button
+                                onclick="window.open('https://github.com/Moonamee/Aperture-Studios', '_blank')"
+                              >
+                                Git
+                              </button>
+                              <button
+                                onclick="window.open('https://moonamee.github.io/Aperture-Studios/', '_blank')"
+                              >
+                                Live
+                              </button>
+                              <button id="readMoreButton">Read more</button>
+                            </div>
+                          </div>
+                          <div id="popupReadMore" class="popupReadMore">
+                            <i
+                              class="bx bxs-left-arrow-circle closeReadMore"
+                              id="closeReadMore"
+                            ></i>
+                            <div class="popupReadMore-content">
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_aperture.png"
+                                alt="Aperture"
+                              >
+                              <span>
+                                This site is a portfolio of a photographer and
+                                videographer called Aperture Studios.
+                              </span>
+                              <p>
+                                1. The main page of the site contains
+                                information about the photographer and
+                                videographer, as well as a description of their
+                                work.
+                              </p>
+                              <p>
+                                2. There is a menu in the site's header that
+                                allows you to navigate to various sections such
+                                as "Business areas", "Featured images", "Gear
+                                cage", and "Contact".
+                              </p>
+                              <p>
+                                3. The site also offers the option to download a
+                                template.
+                              </p>
+                              <p>
+                                4. The "What we do" section features the areas
+                                in which the photographer and videographer
+                                specialize, such as Product Photography,
+                                Architecture Photography, Drone Photography, and
+                                Wildlife Photography.
+                              </p>
+                              <p>
+                                5. The site also contains sections with photo
+                                demonstrations, information about the equipment
+                                used, information about past clients, and the
+                                ability to contact the photographer and
+                                videographer.
+                              </p>
+                              <p>
+                                6. The basement of the site has a logo,
+                                navigation links, a newsletter subscription
+                                form, and information about the site's author.
+                              </p>
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_aperture_mobile.png"
+                                alt="Aperture"
+                              >
+                              <span>JavaScript</span>
+                              <p>
+                                The script contains several functions that
+                                perform different actions when scrolling the
+                                page and resizing the browser window.
+                              </p>
+                              <p>
+                                1. The "Header bg parallax" function is
+                                responsible for creating a parallax effect for
+                                the header background. It selects all elements
+                                with class "main-container__bg" and when
+                                scrolling the page, it changes their background
+                                position depending on the speed specified in the
+                                "data-speed" attribute.
+                              </p>
+                              <p>
+                                2. The "Header on top" function is responsible
+                                for changing the position of the header as the
+                                page scrolls. If the scroll reaches or exceeds
+                                100 pixels, the header is moved up and the
+                                animation is removed. If the scroll is less than
+                                100 pixels, the header returns to its original
+                                position and the animation is enabled. This only
+                                happens when the screen width is greater than
+                                768 pixels.
+                              </p>
+                              <p>
+                                3. The "AOS OFF MOBILE" function is responsible
+                                for disabling animation on mobile devices. It
+                                selects all elements with the "data-aos"
+                                attribute and when the browser window is
+                                resized, it removes this attribute for elements
+                                with a screen width less than or equal to 768
+                                pixels. When the screen width is greater than
+                                768 pixels, the "data-aos", "data-aos-offset"
+                                and "data-aos-easing" attributes are restored
+                                for elements. Thus, this script is used to
+                                create a parallax effect for the header
+                                background, change the position of the header
+                                when scrolling and disable animation on mobile
+                                devices.
+                              </p>
+                              <a
+                                target="_blank"
+                                href="https://github.com/Moonamee/Aperture-Studios/blob/main/js/script.js"
+                                >git js...</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main-project-background"></div>
+                        <div class="main-project-media">
+                          <button class="main-project__view" id="view-slide1">
+                            Open
+                          </button>
+                          <div id="popup-slide1">
+                            <div class="popup-content">
+                              <iframe
+                                class="window-container"
+                                src="https://moonamee.github.io/Aperture-Studios/"
+                              ></iframe>
+                            </div>
+                            <div class="popup-side-panel">
+                              <div class="side-panel__content">
+                                <i
+                                  class="bx bxs-x-circle close-button"
+                                  id="close-slide1"
+                                ></i>
+                                <i class="bx bx-devices"></i>
+                                <a target="_blank" href="https://github.com/Moonamee/Aperture-Studios" class='bx bxl-github'></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project-monitor__cover">
+                            <img
+                              src="./img/main/project/cover_aperture_mobile.png"
+                              alt="Aperture"
+                            >
+                          </div>
+                          <div class="project-monitor">
+                            <img
+                              src="./img/main/project/cover_aperture.png"
+                              alt="Monitor"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- SLIDE 2 -->
+                  <li class="splide__slide">
+                    <div class="main-project">
+                      <div class="main-project-wrapper">
+                        <div class="main-project-container">
+                          <div class="project-form">
+                            <p>Bright Light</p>
+                            <span>Singer / Dj / Music Maker</span>
+                            <span
+                              >The site includes various sections, news,
+                              information about Bright Lights (singer and
+                              producer), the latest tracks, a gallery, and
+                              information about upcoming events. Each section
+                              has its own unique elements, such as images, text
+                              description, and links. Overall, the portfolio
+                              site is designed to showcase Bright Lights' work
+                              and accomplishments, as well as provide
+                              information and entertainment for site
+                              visitors.</span
+                            >
+                            <div class="project-form__options">
+                              <div class="form-option__text_adaptive">
+                                <span>Adaptive:</span>
+                                <span>Desktop / Tablet / Mobile</span>
+                              </div>
+                            </div>
+                            <img
+                              class="project-form-cover"
+                              src="./img/main/project/brightlight.jpg"
+                              alt="BL"
+                            >
+                            <div class="project-form__button">
+                              <button
+                                onclick="window.open('https://github.com/Moonamee/Bright-Light-Produser-Personal-Site', '_blank')"
+                              >
+                                Git
+                              </button>
+                              <button
+                                onclick="window.open('https://moonamee.github.io/Bright-Light-Produser-Personal-Site', '_blank')"
+                              >
+                                Live
+                              </button>
+                              <button id="readMoreButtonNext">Read more</button>
+                            </div>
+                          </div>
+                          <div id="popupReadMoreNext" class="popupReadMore">
+                            <i
+                              class="bx bxs-left-arrow-circle closeReadMore"
+                              id="closeReadMoreNext"
+                            ></i>
+                            <div class="popupReadMore-content">
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_brightlight.png"
+                                alt="BL"
+                              >
+                              <span
+                                >This site is the music website of an artist
+                                called "Bright Lights".</span
+                              >
+                              <p>
+                                1. The site has the following structure: The
+                                header contains the artist's logo, the main menu
+                                with links to the sections of the site (Home,
+                                News, About us, Music, Gallery, Tours), and a
+                                block with a player for listening to music.
+                              </p>
 
+                              <p>
+                                2. The main content (main) of the site is
+                                divided into several blocks: - News block
+                                (News), which contains cards with news and the
+                                possibility to read the details. - "About Us"
+                                block with a description of the artist and his
+                                achievements. - A block with a quote and a link
+                                to an interview with the artist. - Latest tracks
+                                block, including track cover, player and
+                                playlist with links to tracks. - A block with a
+                                gallery containing images of the artist. - A
+                                block with upcoming events and tours, including
+                                cards with event information and links to
+                                purchase tickets.
+                              </p>
+                              <p>
+                                3. The site has a responsive design and offers
+                                easy navigation through the sections.
+                              </p>
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_brightlight_mobile.png"
+                                alt="BL"
+                              >
+                              <span>JavaScript</span>
+                              <p>
+                                This site contains the following JavaScript
+                                elements:
+                              </p>
+                              <p>
+                                1. initialize the AOS (Animate On Scroll)
+                                library by calling the AOS.init() function. This
+                                library allows you to add animation to elements
+                                as the page scrolls.
+                              </p>
+                              <p>
+                                2. Customizing the functionality of the mobile
+                                player. Using JavaScript, set the audio play and
+                                pause functions, display time and audio progress
+                                on the mobile player.
+                              </p>
+                              <p>
+                                2. Customizing the functionality of the mobile
+                                player. Using JavaScript, set the audio play and
+                                pause functions, display time and audio progress
+                                on the mobile player.
+                              </p>
+                              <p>
+                                3. Realization of page scrolling functionality
+                                when clicking on menu items. When clicking on a
+                                menu item, the page scrolls smoothly to the
+                                corresponding section.
+                              </p>
+                              <p>
+                                4. Realization of parallax effect for the site
+                                header background. When scrolling the page, the
+                                header background moves at a different speed
+                                than the page scroll speed, creating a depth
+                                effect.
+                              </p>
+                              <p>
+                                5. Realization of smooth scrolling to the header
+                                section on page load. When the page loads, the
+                                page scrolls smoothly to the header section so
+                                that the user can immediately see the page
+                                content.
+                              </p>
+                              <p>
+                                6. Realization of the functionality of opening
+                                and closing the container with the news
+                                description when clicking on the "Read more..."
+                                button. When clicking on the "Read more..."
+                                button, the container with the news description
+                                is opened, and when clicking again, it is
+                                closed.
+                              </p>
+                              <p>
+                                7. Realization of the audio player
+                                functionality. An audio player with the
+                                functions of playback control, volume control
+                                and audio progress display was created.
+                              </p>
+                              <p>
+                                8. Realization of pop-up window functionality.
+                                Clicking on the text icon opens a pop-up window
+                                with additional information, which can be closed
+                                by clicking outside the window.
+                              </p>
+                              <p>
+                                9. Playing videos using YouTube API and
+                                displaying videos in a modal window. Clicking on
+                                a video opens a modal window that plays the
+                                video using the YouTube API.
+                              </p>
+                              <p>
+                                10. Implementing an image gallery with the
+                                ability to enlarge an image when clicked. When
+                                you click on an image in the gallery, it is
+                                enlarged for a more detailed view.
+                              </p>
+                              <p>
+                                11. Using Swiper to create a slider with the
+                                ability to navigate and switch images. Swiper
+                                allows you to create adaptive sliders with
+                                various customizations and transition effects.
+                              </p>
+                              <p>
+                                12. Adding a shadow effect to a Swiper slider
+                                when the checkbox is activated. When the
+                                checkbox is activated, a shadow effect is added
+                                to the Swiper slider, giving it extra depth.
+                              </p>
+                              <p>
+                                13. Using Splide to create an event slider with
+                                adaptive display on different devices. Splide
+                                allows you to create event sliders that can be
+                                adapted for different devices and screen
+                                resolutions.
+                              </p>
+                              <p>
+                                14. Various features to control the visibility
+                                and behavior of page elements. These functions
+                                allow you to control the display and behavior of
+                                elements based on user actions or page state.
+                              </p>
+                              <p>
+                                This is just a brief description of the
+                                JavaScript elements on this site.
+                              </p>
+                              <a
+                                target="_blank"
+                                href="https://github.com/Moonamee/Bright-Light-Produser-Personal-Site/blob/main/js/script.js"
+                                >git js...</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main-project-background"></div>
+                        <div class="main-project-media">
+                          <button class="main-project__view" id="view-slide2">
+                            Open
+                          </button>
+                          <div id="popup-slide2">
+                            <div class="popup-content2">
+                              <iframe
+                                class="window-container"
+                                src="https://moonamee.github.io/Bright-Light-Produser-Personal-Site/"
+                              ></iframe>
+                            </div>
+                            <div class="popup-side-panel">
+                              <div class="side-panel__content">
+                                <i
+                                  class="bx bxs-x-circle close-button"
+                                  id="close-slide2"
+                                ></i>
+                                <i class="bx bx-devices devices2"
+                                  ></i
+                                >
+                                <a target="_blank" href="https://github.com/Moonamee/Bright-Light-Produser-Personal-Site" class='bx bxl-github'></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project-monitor__cover">
+                            <img
+                              src="./img/main/project/cover_brightlight_mobile.png"
+                              alt="Aperture"
+                            >
+                          </div>
+                          <div class="project-monitor">
+                            <img
+                              src="./img/main/project/cover_brightlight.png"
+                              alt="Monitor"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- SLIDE 3 -->
+                  <li class="splide__slide">
+                    <div class="main-project">
+                      <div class="main-project-wrapper">
+                        <div class="main-project-container">
+                          <div class="project-form">
+                            <p>Taster</p>
+                            <span>Platform and quick start restaurateurs</span>
+                            <span
+                              >This site is a web page about a company or
+                              organization related to the restaurant field. The
+                              site contains a header with logo and navigation
+                              menu, main content with sections such as "Header",
+                              "Discover", "Statistics" and "More", and a footer
+                              with additional links and information about the
+                              author of the site. The page has a responsive
+                              design and offers easy navigation through the
+                              sections.</span
+                            >
+                            <div class="project-form__options">
+                              <div class="form-option__text_adaptive">
+                                <span>Adaptive:</span>
+                                <span>Desktop / Tablet / Mobile</span>
+                              </div>
+                            </div>
+                            <img
+                              class="project-form-cover"
+                              src="./img/main/project/taster.jpg"
+                              alt="Taster"
+                            >
+                            <div class="project-form__button">
+                              <button
+                                onclick="window.open('https://github.com/Moonamee/Taster-Eat-landing-page', '_blank')"
+                              >
+                                Git
+                              </button>
+                              <button
+                                onclick="window.open('https://moonamee.github.io/Taster-Eat-landing-page', '_blank')"
+                              >
+                                Live
+                              </button>
+                              <button id="readMoreButtonTaster">
+                                Read more
+                              </button>
+                            </div>
+                          </div>
+                          <div id="popupReadMoreTaster" class="popupReadMore">
+                            <i
+                              class="bx bxs-left-arrow-circle closeReadMore"
+                              id="closeReadMoreTaster"
+                            ></i>
+                            <div class="popupReadMore-content">
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_taster.png"
+                                alt="Taster"
+                              >
+                              <span
+                                >This site is a web page related to the
+                                restaurant industry.</span
+                              >
+                              <p>
+                                1. It contains a header with logo and navigation
+                                menu, main content with sections such as
+                                "Header", "Discover", "Statistics" and "More",
+                                and a footer with additional links.
+                              </p>
+
+                              <p>
+                                2. The site offers information about the
+                                company, invites restaurateurs to join the
+                                Taster platform and launch virtual restaurants
+                                from their existing kitchen.
+                              </p>
+                              <p>
+                                3. It also emphasizes that Taster is a
+                                collection of online restaurants that are
+                                dedicated to providing the best in street food.
+                              </p>
+                              <p>
+                                4. The website has a responsive design and
+                                offers easy to navigate sections.
+                              </p>
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_taster_mobile.png"
+                                alt="Taster"
+                              >
+                              <span>JavaScript</span>
+                              <p>The code performs the following functions:</p>
+                              <p>
+                                1. AOS.init(); - initializes the AOS (Animate On
+                                Scroll) library, which adds animation to
+                                elements as the page scrolls.
+                              </p>
+                              <p>
+                                2. Burger menu: - Clicking on an element with
+                                class "mobile div" adds/removes "active", "open"
+                                and "show" class from corresponding elements
+                                with classes "mobileDiv", "mobileNav" and
+                                "mobileNavUl". This allows the burger menu to be
+                                displayed and hidden when clicked. - When
+                                clicking outside the area with class "mobile",
+                                the classes "active", "open" and "show" of
+                                elements with classes "mobileDiv", "mobileNav"
+                                and "mobileNavUl" are removed. This allows the
+                                burger menu to be hidden when clicked outside
+                                its area. - For each list item with the "mobile
+                                ul li" class, an animation delay is set using
+                                the "animationDelay" property.
+                              </p>
+                              <p>
+                                3. accordion: - Gets all elements with class
+                                "accordion" and adds a "click" event handler for
+                                each element. - When an accordion element is
+                                clicked, it toggles the "active" class and
+                                changes the display style of the next element
+                                (panel). If the display style is set as "flex",
+                                it changes to "none", and vice versa. This code
+                                is responsible for the burger menu and accordion
+                                functionality on the web page.
+                              </p>
+                              <a
+                                target="_blank"
+                                href="https://github.com/Moonamee/Taster-Eat-landing-page/blob/main/js/script.js"
+                                >git js...</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main-project-background"></div>
+                        <div class="main-project-media">
+                          <button class="main-project__view" id="view-slide3">
+                            Open
+                          </button>
+                          <div id="popup-slide3">
+                            <div class="popup-content3">
+                              <iframe
+                                class="window-container"
+                                src="https://moonamee.github.io/Taster-Eat-landing-page/"
+                              ></iframe>
+                            </div>
+                            <div class="popup-side-panel">
+                              <div class="side-panel__content">
+                                <i
+                                  class="bx bxs-x-circle close-button"
+                                  id="close-slide3"
+                                ></i>
+                                <i class="bx bx-devices devices3"></i>
+                                <a target="_blank" href="https://github.com/Moonamee/Taster-Eat-landing-page" class='bx bxl-github'></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project-monitor__cover">
+                            <img
+                              src="./img/main/project/cover_taster_mobile.png"
+                              alt="Aperture"
+                            >
+                          </div>
+                          <div class="project-monitor">
+                            <img
+                              src="./img/main/project/cover_taster.png"
+                              alt="Monitor"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- SLIDE 4 -->
+                  <li class="splide__slide">
+                    <div class="main-project">
+                      <div class="main-project-wrapper">
+                        <div class="main-project-container">
+                          <div class="project-form">
+                            <p>Farmzi</p>
+                            <span>Horticulture & Agriculture</span>
+                            <span
+                              >This site is a web page with information about a
+                              company offering gardening and landscaping
+                              services. The site has sections including company
+                              information, services, team, clients, latest news
+                              and contact details.</span
+                            >
+                            <div class="project-form__options">
+                              <div class="form-option__text_adaptive">
+                                <span>Adaptive:</span>
+                                <span>Desktop / Tablet / Mobile</span>
+                              </div>
+                            </div>
+                            <img
+                              class="project-form-cover"
+                              src="./img/main/project/farmzi.jpg"
+                              alt="Farmzi"
+                            >
+                            <div class="project-form__button">
+                              <button
+                                onclick="window.open('https://github.com/Moonamee/Farmzi-landing-nature', '_blank')"
+                              >
+                                Git
+                              </button>
+                              <button
+                                onclick="window.open('https://moonamee.github.io/Farmzi-landing-nature', '_blank')"
+                              >
+                                Live
+                              </button>
+                              <button id="readMoreButtonFarmzi">
+                                Read more
+                              </button>
+                            </div>
+                          </div>
+                          <div id="popupReadMoreFarmzi" class="popupReadMore">
+                            <i
+                              class="bx bxs-left-arrow-circle closeReadMore"
+                              id="closeReadMoreFarmzi"
+                            ></i>
+                            <div class="popupReadMore-content">
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_farmzi.png"
+                                alt="Farmzi"
+                              >
+                              <span
+                                >This site is a web-based platform dedicated to
+                                gardening and landscape design.</span
+                              >
+                              <p>
+                                1. There is a bright and attractive hero block
+                                on the main page of the site that draws the
+                                attention of visitors and introduces them to the
+                                gardening atmosphere. Here you can find
+                                inspiring quotes and an invitation to explore
+                                all the services the company offers.
+                              </p>
+                              <p>
+                                2. On the “About Us” page, you can find detailed
+                                information about the company itself, its
+                                experience and approach to gardening. It also
+                                includes photos and descriptions of key team
+                                members so visitors can get acquainted with the
+                                experts working for the company.
+                              </p>
+                              <p>
+                                3. The Services section offers a detailed
+                                description of the various types of services
+                                provided by the company. Here you can find
+                                information about planting flowers, growing
+                                trees, removing weeds and watering the garden.
+                                Each service comes with photos and a description
+                                of the benefits.
+                              </p>
+                              <p>
+                                4. The company also offers a video intro that
+                                can be viewed on the website. This allows
+                                visitors to see the company's work and start
+                                making their dreams of having their own garden
+                                come true.
+                              </p>
+                              <p>
+                                5. The site also has “Team” and “Happy
+                                Customers” sections, which provide photos and
+                                reviews about the company's work. This allows
+                                visitors to learn about the professionalism and
+                                quality of the services provided.
+                              </p>
+                              <p>
+                                6. The site also has a “Latest News” section
+                                that features useful gardening and landscaping
+                                tips and tricks. Here you can find articles
+                                about proper garden care, plant selection and
+                                other interesting topics.
+                              </p>
+                              <p>
+                                7. At the bottom of the page is a footer with
+                                the company's contact information and a link to
+                                the site's developer. It also includes links to
+                                the company's social media, where visitors can
+                                learn more and get in touch with the team.
+                              </p>
+                              <p>
+                                8. Overall, this site offers a complete platform
+                                for those interested in gardening and landscape
+                                design. It provides the information, inspiration
+                                and services you need to create and maintain a
+                                beautiful garden.
+                              </p>
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_farmzi_mobile.png"
+                                alt="Farmzi"
+                              >
+                              <span>JavaScript</span>
+                              <p>
+                                JavaScript code performs the following actions:
+                              </p>
+                              <p>
+                                1. When you click on elements inside a block
+                                with class "mobile div", the following happens:
+                                Elements with class "mobile div" toggle class
+                                "active". Elements with class "mobile nav"
+                                switch class "open". Elements with class "mobile
+                                nav ul" switch class "show".
+                              </p>
+                              <p>
+                                2. The following happens in the loop: For each
+                                li element inside the list with class "mobile
+                                ul", a CSS style with a delay animation is
+                                applied. The delay animation is calculated based
+                                on the element index.
+                              </p>
+                              <p>
+                                3. Next comes the code for the accordion: All
+                                elements with class "accordion" are obtained. A
+                                "click" event handler is added for each element.
+                                When an element is clicked, the "active" class
+                                is toggled and the next element (panel) is
+                                displayed/hidden.
+                              </p>
+                              <p>
+                                This code uses the jQuery library to work with
+                                DOM elements and the Swiper plugin to create the
+                                slider. It also contains code to create an
+                                accordion without using jQuery.
+                              </p>
+                              <a
+                                target="_blank"
+                                href="https://github.com/Moonamee/Farmzi-landing-nature/blob/main/js/script.js"
+                                >git js...</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main-project-background"></div>
+                        <div class="main-project-media">
+                          <button class="main-project__view" id="view-slide4">
+                            Open
+                          </button>
+                          <div id="popup-slide4">
+                            <div class="popup-content4">
+                              <iframe
+                                class="window-container"
+                                src="https://moonamee.github.io/Farmzi-landing-nature/"
+                              ></iframe>
+                            </div>
+                            <div class="popup-side-panel">
+                              <div class="side-panel__content">
+                                <i
+                                  class="bx bxs-x-circle close-button"
+                                  id="close-slide4"
+                                ></i>
+                                <i class="bx bx-devices devices4"></i>
+                                <a target="_blank" href="https://github.com/Moonamee/Farmzi-landing-nature" class='bx bxl-github'></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project-monitor__cover">
+                            <img
+                              src="./img/main/project/cover_farmzi_mobile.png"
+                              alt="Aperture"
+                            >
+                          </div>
+                          <div class="project-monitor">
+                            <img
+                              src="./img/main/project/cover_farmzi.png"
+                              alt="Monitor"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- SLIDE 5 -->
+                  <li class="splide__slide">
+                    <div class="main-project">
+                      <div class="main-project-wrapper">
+                        <div class="main-project-container">
+                          <div class="project-form">
+                            <p>Ozart</p>
+                            <span>UX/UI Designer portfolio</span>
+                            <span
+                              >This site is a portfolio of a UX/UI designer,
+                              product designer, content creator and creative
+                              director. The site contains sections that present
+                              information about the designer, her skills and
+                              experience. The homepage has a welcome area with a
+                              photo of the designer and a brief description of
+                              her skills.</span
+                            >
+                            <div class="project-form__options">
+                              <div class="form-option__text_adaptive">
+                                <span>Adaptive:</span>
+                                <span>Desktop / Tablet / Mobile</span>
+                              </div>
+                            </div>
+                            <img
+                              class="project-form-cover"
+                              src="./img/main/project/ozart.jpg"
+                              alt="Ozart"
+                            >
+                            <div class="project-form__button">
+                              <button
+                                onclick="window.open('https://github.com/Moonamee/Ozart-Landing-Portfolio', '_blank')"
+                              >
+                                Git
+                              </button>
+                              <button
+                                onclick="window.open('https://moonamee.github.io/Ozart-Landing-Portfolio', '_blank')"
+                              >
+                                Live
+                              </button>
+                              <button id="readMoreButtonOzart">
+                                Read more
+                              </button>
+                            </div>
+                          </div>
+                          <div id="popupReadMoreOzart" class="popupReadMore">
+                            <i
+                              class="bx bxs-left-arrow-circle closeReadMore"
+                              id="closeReadMoreOzart"
+                            ></i>
+                            <div class="popupReadMore-content">
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_ozart.png"
+                                alt="Ozart"
+                              >
+                              <span>The site is described as follows:</span>
+                              <p>
+                                1. Site header: Logo, which is a link to the
+                                home page. A search button, which when clicked
+                                opens a field for entering a query. A navigation
+                                menu that contains "Home", "About me",
+                                "Presents" and "Contacts" sections.
+                              </p>
+                              <p>
+                                2. The main part of the site: A header area
+                                containing a welcome and information about the
+                                designer. A photo of the designer.
+                              </p>
+                              <p>
+                                3. Social Media: Icons to access the designer's
+                                social media profiles.
+                              </p>
+                              <p>
+                                4. About me section: A short video about the
+                                designer.
+                              </p>
+                              <p>
+                                5. "What I Do" section: A block describing the
+                                designer's three areas of expertise: 'Ui & UX
+                                Design', 'Graphic Design' and 'Web Development'.
+                              </p>
+                              <p>
+                                6. Portfolio: Filters to select a category of
+                                work. Gallery with images of projects.
+                              </p>
+                              <p>
+                                7. Client Testimonial section: Client
+                                testimonial about the designer's work.
+                              </p>
+                              <p>
+                                8. Get in touch section: A headline and
+                                description encouraging to get in touch with the
+                                designer. A "Contact" button to go to the
+                                contact form. Designer's Social Media.
+                              </p>
+                              <p>
+                                9. "My Blog" section: Section Title. Blog post
+                                cards with date, number of comments, likes,
+                                author and brief description.
+                              </p>
+                              <p>
+                                10. Footer: Information about the designer and
+                                how to contact the designer. Copyright and link
+                                to the template author. Designer's Social Media.
+                              </p>
+                              <img
+                                class="project-form-cover__visible"
+                                src="./img/main/project/cover_ozart_mobile.png"
+                                alt="Ozart"
+                              >
+                              <span>JavaScript</span>
+                              <p>
+                                Code that performs various actions on a web
+                                page. Here is its explanation:
+                              </p>
+                              <p>
+                                1. `$(".popup").css("display", "none");` - Sets
+                                the initial value of the CSS `display` property
+                                for an element with class "popup" as "none",
+                                which hides it initially.
+                              </p>
+                              <p>
+                                2. Burger menu button click handler: Adds a
+                                burger-menu button click event handler. When the
+                                button is clicked, toggles the "active" class
+                                for button and menu, which allows animating the
+                                display and hiding of the menu.
+                              </p>
+                              <img
+                                src="./img/main/project/code_ozart_2.jpg"
+                                alt="code2"
+                              >
+                              <p>
+                                3. Handler for clicking on an image in the
+                                portfolio gallery: Adds an image click handler
+                                inside an element with class
+                                "portfolio-gallery-box". When clicking on an
+                                image, gets its source path and sets it to the
+                                `src` attribute of the image inside the element
+                                with class "popup". Then, using the `fadeIn()`
+                                method, smoothly displays the element with the
+                                class "popup".
+                              </p>
+                              <img
+                                src="./img/main/project/code_ozart_3.jpg"
+                                alt="code2"
+                              >
+                              <p>
+                                4. handler for clicking on the close button of
+                                the popup: $(".close").click(function () {
+                                $(".popup").fadeOut(); }); Adds a click handler
+                                to an element with class "close". When the close
+                                button is clicked, using the `fadeOut()` method,
+                                smoothly hides the element with class "popup".
+                              </p>
+                              <img
+                                src="./img/main/project/code_ozart_4.jpg"
+                                alt="code2"
+                              >
+                              <p>
+                                5. Handler for clicking on the area around the
+                                popup to close: $(".popup-wrap").click(function
+                                () { $(".popup").fadeOut(); }); Adds a click
+                                handler to an element with the class
+                                "popup-wrap". When clicking on the area around
+                                the popup, using the `fadeOut()` method,
+                                smoothly hides the element with class "popup".
+                              </p>
+                              <img
+                                src="./img/main/project/code_ozart_5.jpg"
+                                alt="code2"
+                              >
+                              <p>
+                                6. Function `toggleSearchInput()` to toggle the
+                                display of the search field: Gets references to
+                                elements with the classes "search_input" and
+                                "search_img". When the function is called,
+                                checks the current value of the CSS `display`
+                                property for the search field. If it is equal to
+                                "block", it hides the search field and removes
+                                the "clicked" class from the element with the
+                                "search_img" class. If the value is not equal to
+                                "block", it displays the search box and adds the
+                                "clicked" class to the element with the
+                                "search_img" class.
+                              </p>
+                              <img
+                                src="./img/main/project/code_ozart_6.jpg"
+                                alt="code2"
+                              >
+                              <p>
+                                7. A click handler outside the search field to
+                                hide it: Adds a click handler to the document.
+                                When clicked outside the search field and
+                                element with class "search_img", hides the
+                                search field and removes the "clicked" class
+                                from the element with class "search_img".
+                              </p>
+                              <img
+                                src="./img/main/project/code_ozart_7.jpg"
+                                alt="code2"
+                              >
+                              <p>
+                                This code is responsible for the functionality
+                                of the popup, burger menu, portfolio gallery and
+                                search field on the web page.
+                              </p>
+                              <a
+                                target="_blank"
+                                href="https://github.com/Moonamee/Ozart-Landing-Portfolio/blob/main/js/script.js"
+                                >git js...</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main-project-background"></div>
+                        <div class="main-project-media">
+                          <button class="main-project__view" id="view-slide5">
+                            Open
+                          </button>
+                          <div id="popup-slide5">
+                            <div class="popup-content5">
+                              <iframe
+                                class="window-container"
+                                src="https://moonamee.github.io/Ozart-Landing-Portfolio/"
+                              ></iframe>
+                            </div>
+                            <div class="popup-side-panel">
+                              <div class="side-panel__content">
+                                <i
+                                  class="bx bxs-x-circle close-button"
+                                  id="close-slide5"
+                                ></i>
+                                <i class="bx bx-devices devices5"></i>
+                                <a target="_blank" href="https://github.com/Moonamee/Ozart-Landing-Portfolio" class='bx bxl-github'></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project-monitor__cover">
+                            <img
+                              src="./img/main/project/cover_ozart_mobile.png"
+                              alt="Aperture"
+                            >
+                          </div>
+                          <div class="project-monitor">
+                            <img
+                              src="./img/main/project/cover_ozart.png"
+                              alt="Monitor"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- SLIDE 6 -->
+                  <li class="splide__slide">
+                    <div class="main-project">
+                      <div class="main-project-wrapper">
+                        <div class="main-project-container">
+                          <div class="project-form">
+                            <p>Minimal Player</p>
+                            <span>UX/UI React Native App</span>
+                            <span
+                              >This player is a component of React Native for
+                              playing audio files. All in all, this player is
+                              not only a powerful tool for playing audio files,
+                              but also a real work of art that attracts
+                              attention and creates a pleasant atmosphere for
+                              enjoying music.</span
+                            >
+                            <div class="player-cover__wrapp">
+                              <img
+                                class="project-form-cover__player"
+                                src="./img/main/project/cover_rn_1.png"
+                                alt="Player1"
+                              >
+                              <img
+                                class="project-form-cover__player"
+                                src="./img/main/project/cover_rn_2.png"
+                                alt="Player2"
+                              >
+                              <img
+                                class="project-form-cover__player"
+                                src="./img/main/project/cover_rn_3.png"
+                                alt="Player3"
+                              >
+                            </div>
+                            <div class="project-form__button">
+                              <button
+                                onclick="window.open('https://github.com/Moonamee/Minaimal-Player', '_blank')"
+                              >
+                                Git
+                              </button>
+                              <button id="readMoreButtonPlayer">
+                                Read more
+                              </button>
+                            </div>
+                          </div>
+                          <div id="popupReadMorePlayer" class="popupReadMore">
+                            <i
+                              class="bx bxs-left-arrow-circle closeReadMore"
+                              id="closeReadMorePlayer"
+                            ></i>
+                            <div class="popupReadMore-content">
+                              <div class="player-cover__wrapp-popup">
+                                <img
+                                  class="project-form-cover__player-popup"
+                                  src="./img/main/project/cover_rn_2.png"
+                                  alt="Player2"
+                                >
+                              </div>
+                              <span>This player is a real work of art!</span>
+                              <p>
+                                1. It has a beautiful and elegant design that
+                                attracts the eye and creates a pleasant
+                                atmosphere.
+                              </p>
+                              <p>
+                                2. It has all the features you need for complete
+                                control over your audio playback.
+                              </p>
+                              <p>
+                                3. The player's interface includes stylish
+                                control buttons such as play, rewind, pause and
+                                repeat.
+                              </p>
+                              <p>
+                                4. They are placed in such a way to ensure ease
+                                of use and easy navigation.
+                              </p>
+                              <p>
+                                5. The player utilises AudioContext, which
+                                allows you to access information about the
+                                current audio file and playback control
+                                functions.
+                              </p>
+                              <p>
+                                6. This provides flexibility and power in audio
+                                file management.
+                              </p>
+                              <p>
+                                7. A special feature of this player is the
+                                ability to move around the track using a slider.
+                              </p>
+                              <p>
+                                8. This allows you to precisely select the
+                                playback position and enjoy your music at the
+                                right moment.
+                              </p>
+                              <p>
+                                9. Information about the current track is
+                                displayed with clarity and style.
+                              </p>
+                              <p>
+                                10. You can see the file name and audio format
+                                so you can always be aware of what is playing.
+                              </p>
+                              <p>
+                                11. All the control buttons are made using
+                                different icons from the expo-vector-icons
+                                package, which gives them a unique and
+                                attractive look.
+                              </p>
+                              <p>
+                                12. The player also features beautiful
+                                animations that create effects when you press
+                                the play buttons.
+                              </p>
+                              <p>
+                                13. This adds dynamism and interactivity to the
+                                use of the player.
+                              </p>
+                              <p>
+                                14. The gradient background created with the
+                                LinearGradient component gives the player an
+                                additional aesthetic appeal.
+                              </p>
+                              <p>
+                                15. It combines different shades to create an
+                                attractive visual effect.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="main-project-background"></div>
+                        <div class="main-project-media">
+                          <div class="main-project-image">
+                            <div class="main-image-container">
+                              <img
+                                src="./img/main/project/cover_rn_1.png"
+                                alt="Player"
+                              >
+                              <img 
+                                src="./img/main/project/cover_rn_2.png"
+                                alt="Player"
+                              >
+                              <img
+                                src="./img/main/project/cover_rn_3.png"
+                                alt="Player"
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- SLIDE 7 -->
+                  <!-- <li class="splide__slide slide-scroll">
+                    <div class="main-image-container__interior">
+                      <div class="top-grid-container">
+                        <div class="grid-item">
+                          <img
+                            src="./img/main/project/interior_1.jpg"
+                            alt="Interior_1"
+                            onclick="openModal(this)"
+                          >
+                        </div>
+                        <div class="grid-item">
+                          <img
+                            src="./img/main/project/interior_2.jpg"
+                            alt="Interior_2"
+                            onclick="openModal(this)"
+                          >
+                        </div>
+                        <div class="grid-item">
+                          <img
+                            src="./img/main/project/interior_3.jpg"
+                            alt="Interior_3"
+                            onclick="openModal(this)"
+                          >
+                        </div>
+                      </div>
+                      <div class="bottom-grid-container">
+                        <div class="grid-item">
+                          <img
+                            src="./img/main/project/interior_4.jpg"
+                            alt="Interior_4"
+                            onclick="openModal(this)"
+                          >
+                        </div>
+                        <div class="grid-item">
+                          <img
+                            src="./img/main/project/interior_5.jpg"
+                            alt="Interior_5"
+                            onclick="openModal(this)"
+                          >
+                        </div>
+                        <div class="grid-item">
+                          <img
+                            src="./img/main/project/interior_6.jpg"
+                            alt="Interior_6"
+                            onclick="openModal(this)"
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li> -->
+                </ul>
+              </div>
+            </section>
+          </div>
+          <!-- RESUME -->
+          <div class="swiper-slide" id="resume">
+            <div class="resume-container">
+              <div class="resume-wrapper">
+                <!-- Resume header -->
+                <div class="resume-header-container">
+                  <div class="resume-header__text">
+                    <h2>Maksym Ivashchenko</h2>
+                    <p>Frontend developer</p>
+                    <p>Designer</p>
+                    <span
+                      >I am a passionate web developer with experience in
+                      JavaScript, Css, Html and React.js development. A designer
+                      with a very subtle taste and appreciation for detail. I
+                      constantly strive for excellence and aim to achieve high
+                      results in my work. I have a strong understanding of user
+                      experience and can create attractive and intuitive
+                      designs. My skills include building responsive websites,
+                      search engine optimization. I also have experience working
+                      in a team and can collaborate effectively with other
+                      developers and designers. I am always ready for new
+                      challenges and strive to constantly learn and develop my
+                      skills. I am confident that my knowledge and experience
+                      will allow me to successfully perform the tasks of a web
+                      developer and designer.</span
+                    >
+                  </div>
+                  <div class="resume-header__contact">
+                    <div class="resume-header__contact-item">
+                      <img src="./img/main/resume/mail.svg" alt="mail">
+                      <a class="mailto" href="mailto:maxgleroy@gmail.com"
+                        >maxgleroy@gmail.com</a
+                      >
+                    </div>
+                    <div class="resume-header__contact-item">
+                      <div class="phone-icon">
+                        <img src="./img/main/resume/phone.svg" alt="phone">
+                      </div>
+                      <div class="phone-item">
+                        <span>+38 066 639 28 39</span>
+                        <p>Ukrine, Kryvyi Rih</p>
+                      </div>
+                      <div class="contact-apply-item">
+                        <img
+                          src="./img/main/resume/telegram.svg"
+                          alt="telegram"
+                        >
+                        <img
+                          src="./img/main/resume/whatsapp.svg"
+                          alt="whatsapp"
+                        >
+                        <img src="./img/main/resume/viber.svg" alt="viber">
+                      </div>
+                    </div>
+                    <div class="resume-header__contact-item">
+                      <img src="./img/main/resume/github.svg" alt="github">
+                      <a target="_blank" href="https://github.com/Moonamee"
+                        ><span>Github Page</span></a
+                      >
+                    </div>
+                    <div class="resume-header__contact-item">
+                      <img src="./img/main/resume/in.svg" alt="linkedin">
+                      <a
+                        target="_blank"
+                        href="https://www.linkedin.com/in/max-ivashchenko-7b8337290/"
+                        ><span>Linkedin Page</span></a
+                      >
+                    </div>
+                    <div class="resume-header__contact-item">
+                      <img
+                        src="./img/main/resume/download.svg"
+                        alt="download"
+                      >
+                      <a href="./doc/Resume%20Maksym%20Ivashchenko.pdf" download
+                        ><span>Download</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Resume skills -->
+                <div class="resume-skills-container">
+                  <div class="resume-skills__content">
+                    <div class="skills-background-img"></div>
+                    <div class="skills-content">
+                      <h3>Skills</h3>
+                      <div class="skills-content__frontend">
+                        <span>I use in frontend:</span>
+                        <ul>
+                          <li>JavaScript</li>
+                          <li>CSS</li>
+                          <li>HTML</li>
+                          <li>React JS / Native</li>
+                        </ul>
+                        <div class="skills-scales-frontend">
+                          <div class="skills-js-bg">
+                            <div class="skills-js"></div>
+                          </div>
+                          <div class="skills-css-bg">
+                            <div class="skills-css"></div>
+                          </div>
+                          <div class="skills-html-bg">
+                            <div class="skills-html"></div>
+                          </div>
+                          <div class="skills-react-bg">
+                            <div class="skills-react"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="skills-content__design">
+                        <span>I use in design:</span>
+                        <ul>
+                          <li>Figma</li>
+                          <li>Adobe Photoshop</li>
+                          <li>Adobe Illustrator</li>
+                          <li>Adobe XD</li>
+                          <li>Autodesk 3ds Max</li>
+                        </ul>
+                        <div class="skills-scales-design">
+                          <div class="skills-fig-bg">
+                            <div class="skills-fig"></div>
+                          </div>
+                          <div class="skills-phot-bg">
+                            <div class="skills-phot"></div>
+                          </div>
+                          <div class="skills-illust-bg">
+                            <div class="skills-illust"></div>
+                          </div>
+                          <div class="skills-xd-bg">
+                            <div class="skills-xd"></div>
+                          </div>
+                          <div class="skills-3ds-bg">
+                            <div class="skills-3ds"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="skills-dividing-line"></div>
+                      <div class="skills-content__flow">
+                        <ul>
+                          <li>
+                            I make adaptive and cross-browser layouts, try to
+                            use the best technologies and always learn new ones.
+                          </li>
+                          <li>
+                            Actively interested in AI and use it widely in
+                            projects.
+                          </li>
+                          <li>
+                            Speak English intermediately, reading / listening /
+                            writing.
+                          </li>
+                          <li>Development of corporate identity, logo.</li>
+                          <li>Strong knowledge of graphics programs.</li>
+                          <li>Creativity, sense of color and style.</li>
+                          <li>Actively follow design trends.</li>
+                          <li>Accuracy, diligence, attention to detail.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Resume EDU -->
+                <div class="resume-edu-container">
+                  <div class="resume-edu-wrapper">
+                    <div class="resume-edu-form">
+                      <div class="resume-edu-content">
+                        <div class="edu-background-img"></div>
+                        <div class="resume-edu__text_1">
+                          <h3>Education</h3>
+                          <span>2005-2011</span>
+                          <p>
+                            Open International University of Human Development
+                            "Ukraine".
+                          </p>
+                          <p
+                            data-first-color="Specialty:"
+                            data-last-color=" 'Design'."
+                          ></p>
+                          <p
+                            data-first-color="Qualification:"
+                            data-last-color=" 'Interior and Equipment Design'."
+                          ></p>
+                          <span>2010-2011</span>
+                          <p>
+                            Interregional Academy of Business and Law named
+                            after N. Kruchinina Certificate given for having
+                            successfully completed the full course of program
+                            “Web design”.
+                          </p>
+                        </div>
+                        <div class="resume-edu__text_2">
+                          <h3>Experience</h3>
+                          <span
+                            >Freelance Web Developer (May – October 2023)
+                          </span>
+                          <p>
+                            Developed an audio player, player design using Adobe
+                            Photoshop / Figma / React Native
+                          </p>
+                          <p>
+                            Developed websites using Html / Css / JavaScript and
+                            JS library.
+                          </p>
+                        </div>
+                        <div class="resume-footer">
+                          <span
+                            >These and other projects are available on my</span
+                          >
+                          <a target="_blank" href="https://github.com/Moonamee"
+                            >Github.</a
+                          >
+                          <div class="resume-form__button">
+                            <button onclick="downloadFile()">
+                              Download CV
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CONTACT -->
+          <div class="swiper-slide" id="contact">
+            <div class="contact-container">
+              <div class="contact-wrapper">
+                <div class="contact-social__content">
+                  <div class="contact-social__form">
+                    <div class="social__form-button">
+                      <div class="form-button">
+                        <div class="icon-whatsapp item"></div>
+                        <div class="btn text-form" id="whatsappBtn">
+                          Whatsapp
+                        </div>
+                      </div>
+                      <div class="form-button">
+                        <div class="icon-telegram item"></div>
+                        <div class="btn text-form" id="telegramBtn">
+                          Telegram
+                        </div>
+                      </div>
+                      <div class="form-button">
+                        <div class="icon-insta item"></div>
+                        <div class="btn text-form" id="instagramBtn">
+                          Instagram
+                        </div>
+                      </div>
+                      <div class="form-button">
+                        <div class="icon-linkedin item"></div>
+                        <div class="btn text-form" id="linkedinBtn">
+                          Linkedin
+                        </div>
+                      </div>
+                      <div class="form-button">
+                        <div class="icon-git item"></div>
+                        <div class="btn text-form" id="githubBtn">Github</div>
+                      </div>
+                      <div class="form-button">
+                        <div class="icon-fb item"></div>
+                        <div class="btn text-form" id="facebookBtn">
+                          Facebook
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-massage__content">
+                  <div class="contact-massage__form">
+                    <form id="myForm">
+                      <div class="contact-massage__name_mail">
+                        <input
+                          type="text"
+                          id="name"
+                          placeholder="Full name"
+                          class="massage__form-name"
+                          required
+                        >
+                        <input
+                          type="email"
+                          id="email"
+                          placeholder="Your email"
+                          class="massage__form-email"
+                          autocomplete="email"
+                          required
+                        >
+                      </div>
+                      <div class="contact-massage">
+                        <textarea
+                          id="message"
+                          placeholder="Your Message"
+                          class="massage__form-massage"
+                          style="resize: none"
+                          required
+                        ></textarea>
+                      </div>
+                      <div id="mailModal" class="mail-modal">
+                        <div class="mail-modal-content">
+                          <i class="bx bxs-error-circle"></i>
+                          <span class="mail-close">&times;</span>
+                          <p id="mail-modal-message">Mail</p>
+                        </div>
+                      </div>
+                      <div class="contact-button-cotainer">
+                        <div class="contact-mobile-soc">
+                          <div class="mob-soc">
+                            <a target="_blank" href="https://github.com/Moonamee">
+                              <img class="mobile-soc-icon" src="./img/main/contact/git.svg" alt="Github">
+                            </a>
+                          </div>
+                          <div class="mob-soc">
+                            <a target="_blank" href="https://www.linkedin.com/in/max-ivashchenko-7b8337290">
+                              <img class="mobile-soc-icon" src="./img/main/contact/linkedin.svg" alt="Linkedin">
+                            </a>
+                          </div>
+                          <div class="mob-soc">
+                            <a target="_blank" href="https://t.me/share/url?url=+380666392839">
+                              <img class="mobile-soc-icon" src="./img/main/contact/telegram.svg" alt="Telegram">
+                            </a>
+                          </div>
+                        </div>
+                        <button
+                          type="submit"
+                          onclick="sendEmail(event)"
+                          class="massage-button-send"
+                        >
+                          <i class="bx bx-mail-send"></i>
+                          Send
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <span>Designed & Created &copy; 2023</span>
+        <a target="_blank" href="https://github.com/Moonamee">by Maksym Ivashchenko</a>
+      </footer>
+    </div>
+    <script src="https://anijs.github.io/lib/anijs/anijs.js"></script>
+    <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/splide.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
