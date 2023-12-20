@@ -1644,16 +1644,39 @@
                       <div class="contact-massage">
                         <textarea id="message" placeholder="Ваше повідомлення" class="massage__form-massage" style="resize: none;" required></textarea>
                       </div>
-                        <button type="submit" onclick="sendEmail(event)" class="massage-button-send">
-                          <i class='bx bx-mail-send'></i>
-                            Надіслати
-                        </button>
                       <div id="mailModal" class="mail-modal">
                         <div class="mail-modal-content">
                           <i class='bx bxs-error-circle' ></i>
                           <span class="mail-close">&times;</span>
                           <p id="mail-modal-message">Пошта</p>
                         </div>
+                      </div>
+                      <div class="contact-button-cotainer">
+                        <div class="contact-mobile-soc">
+                          <div class="mob-soc">
+                            <a target="_blank" href="https://github.com/Moonamee">
+                              <img class="mobile-soc-icon" src="./img/main/contact/git.svg" alt="Github">
+                            </a>
+                          </div>
+                          <div class="mob-soc">
+                            <a target="_blank" href="https://www.linkedin.com/in/max-ivashchenko-7b8337290">
+                              <img class="mobile-soc-icon" src="./img/main/contact/linkedin.svg" alt="Linkedin">
+                            </a>
+                          </div>
+                          <div class="mob-soc">
+                            <a target="_blank" href="https://t.me/share/url?url=+380666392839">
+                              <img class="mobile-soc-icon" src="./img/main/contact/telegram.svg" alt="Telegram">
+                            </a>
+                          </div>
+                        </div>
+                        <button
+                          type="submit"
+                          onclick="sendEmail(event)"
+                          class="massage-button-send"
+                        >
+                          <i class="bx bx-mail-send"></i>
+                          Надіслати
+                        </button>
                       </div>
                     </form>
                   </div>
@@ -1675,4 +1698,3 @@
     <script src="./js/script.js"></script>
   </body>
 </html>
-
