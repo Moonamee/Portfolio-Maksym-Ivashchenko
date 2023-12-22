@@ -330,8 +330,15 @@
     }
 
     .header-nav__link a {
-        width: 100px;
-        height: 40px;
+        font-size: 12px;
+        width: 80px;
+        height: 30px;
+    }
+
+    .header-nav__link a:hover {
+        font-size: 12px;
+        width: 80px;
+        height: 30px;
     }
 
     .hero-form {
@@ -340,6 +347,10 @@
 
     .header-right-panel {
         gap: 30px;
+    }
+
+    .hero-form h2 {
+        font-size: 30px;
     }
 
     /* HOME */
@@ -577,12 +588,17 @@
 
     /* HOME */
     .header-nav__link a {
-        width: 90px;
+        font-size: 12px;
+        width: 80px;
+        height: 30px;
     }
 
-    .header-nav__link a {
+    .header-nav__link a:hover {
         font-size: 12px;
+        width: 80px;
+        height: 30px;
     }
+
 
     /* HOME */
 
@@ -675,6 +691,10 @@
 
     .header-logo {
         font-size: 22px;
+    }
+
+    .header-nav__link i {
+        display: flex;
     }
 
     .bxs-home,
