@@ -32,11 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-
-
-
-
-
 // Swiper
 const swiper = new Swiper(".mySwiper", {
   allowTouchMove: false,
@@ -76,12 +71,15 @@ document.addEventListener("keydown", function (e) {
     e.preventDefault();
     swiper.slidePrev();
     setActiveLink(links[swiper.activeIndex].id);
+    showCorrespondingText(links[swiper.activeIndex].id);
   } else if (e.key === "ArrowDown") {
     e.preventDefault();
     swiper.slideNext();
     setActiveLink(links[swiper.activeIndex].id);
+    showCorrespondingText(links[swiper.activeIndex].id);
   }
 });
+
 const links = [
   { id: "homeLink", slide: 0 },
   { id: "aboutLink", slide: 1 },
@@ -89,14 +87,17 @@ const links = [
   { id: "resumeLink", slide: 3 },
   { id: "contactLink", slide: 4 },
 ];
+
 links.forEach((link) => {
   const element = document.getElementById(link.id);
   element.addEventListener("click", (e) => {
     e.preventDefault();
     swiper.slideTo(link.slide);
     setActiveLink(link.id);
+    showCorrespondingText(link.id);
   });
 });
+
 function setActiveLink(linkId) {
   const activeLink = document.querySelector(".header-nav__link.active");
   if (activeLink) {
@@ -105,6 +106,39 @@ function setActiveLink(linkId) {
   const link = document.getElementById(linkId);
   link.parentNode.classList.add("active");
 }
+
+// Head logo slide change
+const portFolioMe = document.getElementById("portFolioMe");
+const aboutMe = document.getElementById("aboutMe");
+const projectMe = document.getElementById("projectMe");
+const resuMe = document.getElementById("resuMe");
+const contactMe = document.getElementById("contactMe");
+const spans = [portFolioMe, aboutMe, projectMe, resuMe, contactMe];
+
+function showCorrespondingText(linkId) {
+  spans.forEach((span) => {
+    span.classList.remove("fade-in");
+    span.classList.add("fade-out");
+    span.style.pointerEvents = "none";
+  });
+
+  setTimeout(() => {
+    portFolioMe.style.display = linkId === "homeLink" ? "block" : "none";
+    aboutMe.style.display = linkId === "aboutLink" ? "block" : "none";
+    projectMe.style.display = linkId === "projectLink" ? "block" : "none";
+    resuMe.style.display = linkId === "resumeLink" ? "block" : "none";
+    contactMe.style.display = linkId === "contactLink" ? "block" : "none";
+
+    spans.forEach((span) => {
+      span.classList.remove("fade-out");
+      span.classList.add("fade-in");
+      span.style.pointerEvents = "auto";
+    });
+  }, 500);
+}
+
+
+
 // About Read more swipe to Resume
 const readMore = document.getElementById("aboutReadMore");
 
